@@ -1,10 +1,26 @@
 import React from "react"
-import PropTypes from "prop-types"
+import { List, Divider } from 'semantic-ui-react'
+
 class Session extends React.Component {
-  render () {
+
+
+
+  render() {
+
+    const session = this.props.session;
+    const styles = {
+      container: {
+        padding: "3em !important;"
+      }
+    };
+
+
     return (
-      <React.Fragment>
-      </React.Fragment>
+      <div className="session" style={styles.container}>
+        <div className="ui embed">
+          <iframe title="video player" src={session.link} />
+      </div>
+      </div>
     );
   }
 }
