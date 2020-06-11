@@ -1,0 +1,55 @@
+<div class="banner ">
+  <div class="ui container pitch">
+    <h1><strong>Early recordings</strong><br> by the world's <strong> greatest bands</strong></h1>
+    <p>As featured on the <strong>John Peel</strong> radio show<br> airing from <strong>1968</strong> to <strong>2004</strong></p>
+  </div>
+  <%= link_to sessions_path do %>
+    <div class="btn btn-ghost pulse" >Start digging</div>
+  <% end %>
+</div>
+<div class="ui container">
+  <div class="ui header center aligned text feats">
+      <h2>Original Studio sessions</h2>
+      <h3>Over 1000 + recorded sessions featuring the likes of </h3>
+      <p>Bob Marley, David Bowie, Joy Division, Pet Shop Boys, Queen, The Fugees <br></br>
+      <%= link_to sessions_path do %>
+        <a class="btn btn-ghost aligned center" href="#">All sessions</a>
+      <% end %>
+      </p>
+    </div>
+  </div>
+</div>
+<div class="ui container">
+  <div class="ui fluid card">
+    <div class="image">
+      <%= image_tag ("joy_division-band") %>
+      <div class="content">
+        <a class="header">Joy Division</a>
+      </div>
+    </div>
+  </div>
+  <div class="ui fluid card">
+    <div class="image">
+      <%= image_tag ("queen") %>
+      <div class="content">
+        <a class="header">Queen</a>
+      </div>
+    </div>
+  </div>
+  <div class="ui fluid card">
+    <div class="image">
+      <%= image_tag ("the-police") %>
+      <div class="content">
+        <a class="header">Police</a>
+      </div>
+    </div>
+  </div>
+  <div class="ui fluid card">
+    <div class="image">
+      <%= image_tag ("fugees") %>
+      <div class="content">
+        <a class="header">The Fugees</a>
+      </div>
+    </div>
+  </div>
+</div>

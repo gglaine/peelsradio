@@ -1,0 +1,112 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+strong {
+  color: #155ebf;
+}
+
+// BANNER
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('john-peel-at-desk.jpg') !important;
+}
+
+.banner h1 {
+  margin: 0;
+  color: #9b9b9b;
+  text-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.banner .btn {
+  width: 128px;
+  margin: 0 auto;
+}
+
+.container-pitch {
+  background: yellow;
+}
+
+// BUTTON
+.btn-ghost {
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+.btn-ghost:hover {
+  opacity: 1;
+}
+
+
+//BTN ANIM
+.pulse {
+  animation: pulse;
+  animation-iteration-count: 5;
+  animation-duration: 1.3s;
+  background: #ec4c50;
+  color: #fff;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.05);
+    border: 3px solid #4A4A4A;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(1.7);
+    border: 5px solid #4A4A4A;
+  }
+  100% {
+  transform: scale(1.1);
+  }
+}
+
+// FEATURINGS SECTION
+.feats {
+  margin: 2em !important;
+  color: #fff !important;
+}
+
+.card .image {
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+  position: relative;
+}
+
+.card .image .content {
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 44px;
+  background: black;
+  padding: 2em;
+  opacity: 0.9;
+  color: #fff;
+}
+
+.card .image .content:hover {
+  background: transparent;
+  font-size: 48px;
+}
