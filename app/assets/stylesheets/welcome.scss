@@ -29,30 +29,33 @@ strong {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
-.banner .btn {
-  width: 128px;
-  margin: 0 auto;
-}
-
-.container-pitch {
-  background: yellow;
-}
-
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .ui.container.banner {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
     flex-direction: column;
-
   }
   .ui.container.banner .pitch {
     margin-top: 2em;
+    font-size: 18px !important;
   }
   .ui.container.banner .link {
     margin-top: 4em;
+    position: absolute;
+    bottom: 18%;
+  }
+  a {
+    font-size: 2em;
+  }
+  .btn-ghost {
+    border: 4px solid #2351de !important;
+    padding: 30px 24px !important;
+  }
+  .banner h1 {
+    font-size: 44px !important;
   }
 }
 
@@ -104,6 +107,7 @@ strong {
 // FEATURINGS SECTION
 .feats {
   margin: 2em !important;
+  padding-top: 2em !important;
   color: #fff !important;
 }
 
