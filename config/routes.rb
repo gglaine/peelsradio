@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'welcome/index'
   get 'life', to: 'pages#life'
   get 'selected', to: 'pages#selected'
+  get 'timeline', to: 'sessions#timelineup'
   resources :sessions
 
 

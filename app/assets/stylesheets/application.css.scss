@@ -22,7 +22,23 @@ body {
 }
 
 .menu {
+
+}
+
+.card {
+  margin-bottom: 2em !important;
+}
+
+.navbar {
   background: black !important;
+}
+
+.navbar .item {
+  color: #bfbfbf !important;
+}
+
+.navbar .item:hover {
+  color: blue !important;
 }
 
 .btn-home {
@@ -42,6 +58,10 @@ body {
   font-weight: lighter;
   opacity: 1;
   transition: opacity 0.3s ease;
+}
+
+.btn-ghost-left:hover {
+  border: 2px solid blue;
 }
 .btn-ghost-right {
   color: #7f7777;

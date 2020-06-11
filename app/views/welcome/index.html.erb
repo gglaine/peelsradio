@@ -1,7 +1,7 @@
 <div class="ui container fluid banner ">
   <div class="ui container pitch right aligned">
     <h1><strong>Early recordings</strong><br> by the <strong> greatest bands</strong></h1>
-    <p>As featured on John Peel radio show<br>from 1968 to 2004</p>
+    <h3>As featured on John Peel radio show<br>from 1968 to 2004</h3>
   </div>
   <div class="link">
     <%= link_to sessions_path do %>
@@ -12,53 +12,72 @@
 <div class="ui container">
   <div class="ui header center aligned text feats">
       <h2>Original Studio sessions</h2>
-      <h3>Over 1000 + recorded sessions featuring the likes of </h3>
-      <p>Bob Marley, David Bowie, Joy Division, Pet Shop Boys, Queen, The Fugees <br></br>
+      <h3>Over 1000 + recorded sessions spanning all genres from Blues and Punk-Rock to Reggae, New Wave and Electronic music. Featuring sessions by Bob Marley & The Wailers, David Bowie and the Spiders from Mars, Joy Division, Pet Shop Boys, The Fugees, Queen and many more  <br></br>
       <%= link_to sessions_path do %>
-        <a class="btn btn-ghost aligned center" href="#">All sessions</a>
+        <a class="btn btn-ghost aligned center" href="/sessions">Listen</a>
       <% end %>
-      </p>
+      </h3>
     </div>
   </div>
 </div>
 <div class="ui container">
+  <div class="ui header center aligned text feats">
+    <h2>Just a select few</h2>
+  </div>
+</div>
+<div class="ui container">
   <div class="ui fluid card">
-    <div class="image">
+    <%= link_to '/sessions/326' do %>
+    <div class="ui fluid image">
       <%= image_tag ("joy_division-band.jpg") %>
       <div class="content">
-        <a class="header">Joy Division</a>
+        <a class="header">Joy Division / 1979</a>
       </div>
     </div>
+    <% end %>
   </div>
+</div>
+<div class="ui container">
   <div class="ui fluid card">
-    <div class="image">
+    <%= link_to '/sessions/482' do %>
+    <div class="ui fluid image">
+      <%= image_tag ("four-tet.jpg") %>
+      <div class="content">
+        <a class="header">Four Tet / 2003</a>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+<div class="ui container">
+  <div class="ui fluid card">
+    <%= link_to '/sessions/482' do %>
+    <div class="ui fluid image">
       <%= image_tag ("queen.jpg") %>
       <div class="content">
-        <a class="header">Queen</a>
+        <a class="header">Queen / 1973</a>
       </div>
     </div>
+    <% end %>
   </div>
+</div>
+
+<div class="ui container">
   <div class="ui fluid card">
-    <div class="image">
-      <%= image_tag ("the-police.jpeg") %>
-      <div class="content">
-        <a class="header">Police</a>
-      </div>
-    </div>
-  </div>
-  <div class="ui fluid card">
-    <div class="image">
+    <%= link_to '/sessions/714' do %>
+    <div class="ui fluid image">
       <%= image_tag ("fugees.jpg") %>
       <div class="content">
-        <a class="header">The Fugees</a>
+        <a class="header">The Fugees / 1996</a>
       </div>
     </div>
+    <% end %>
   </div>
-  <div class="ui fluid card">
-    <div class="image">
-      <div class="content">
-        <a class="header">Dig deeper</a>
-      </div>
-    </div>
+</div>
+
+<div class="ui container">
+  <div class="ui header center aligned text feats">
+    <h6>Can you dig it ? Man i had lots of fun setting this up. It's a work in progress. Special thanks to strickson for fetching this list of sessions. Check out John Peel's fandom wiki for a rundown on the man's life. Don't forget to visit the John Peel center online, a project set up with the man's family.</h6>
+    <h6>guillaumelaine2.0@gmail.com - github.com/gglaine/peelsradio</h6>
   </div>
 </div>

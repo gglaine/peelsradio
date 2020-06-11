@@ -8,4 +8,9 @@ class SessionsController < ApplicationController
     @session = Session.find(params[:id])
     render component: 'Session', props: { session: @session }
   end
+
+  def timelineup
+    @sessions = Session.all.order(year: :asc)
+    render component: 'Sessions', props: { sessions: @sessions, yearsup: true }
+  end
 end
