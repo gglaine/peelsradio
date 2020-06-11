@@ -38,6 +38,24 @@ strong {
   background: yellow;
 }
 
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .ui.container.banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+  .ui.container.banner .pitch {
+    margin-top: 2em;
+  }
+  .ui.container.banner .link {
+    margin-top: 4em;
+  }
+}
+
 // BUTTON
 .btn-ghost {
   color: #4A4A4A;
@@ -56,10 +74,11 @@ strong {
 //BTN ANIM
 .pulse {
   animation: pulse;
-  animation-iteration-count: 5;
+  animation-iteration-count: 2;
   animation-duration: 1.3s;
-  background: #ec4c50;
+  opacity: 0.88;
   color: #fff;
+  text-align: center;
 }
 
 @keyframes pulse {
@@ -71,10 +90,10 @@ strong {
     border: 3px solid #4A4A4A;
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.08);
   }
   75% {
-    transform: scale(1.7);
+    transform: scale(1.2);
     border: 5px solid #4A4A4A;
   }
   100% {

@@ -1,11 +1,13 @@
-<div class="banner ">
-  <div class="ui container pitch">
-    <h1><strong>Early recordings</strong><br> by the world's <strong> greatest bands</strong></h1>
-    <p>As featured on the <strong>John Peel</strong> radio show<br> airing from <strong>1968</strong> to <strong>2004</strong></p>
+<div class="ui container fluid banner ">
+  <div class="ui container pitch right aligned">
+    <h1><strong>Early recordings</strong><br> by the <strong> greatest bands</strong></h1>
+    <p>As featured on John Peel radio show<br>from 1968 to 2004</p>
   </div>
-  <%= link_to sessions_path do %>
-    <div class="btn btn-ghost pulse" >Start digging</div>
-  <% end %>
+  <div class="link">
+    <%= link_to sessions_path do %>
+      <div class="btn btn-ghost pulse aligned center" >Browse</div>
+    <% end %>
+  </div>
 </div>
 <div class="ui container">
   <div class="ui header center aligned text feats">
@@ -49,6 +51,13 @@
       <%= image_tag ("fugees.jpg") %>
       <div class="content">
         <a class="header">The Fugees</a>
+      </div>
+    </div>
+  </div>
+  <div class="ui fluid card">
+    <div class="image">
+      <div class="content">
+        <a class="header">Dig deeper</a>
       </div>
     </div>
   </div>
