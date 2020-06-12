@@ -17,6 +17,8 @@ class Session extends React.Component {
 
     return (
       <div className="session" style={styles.container}>
+        <div class="ui header">{session.band}</div>
+        <div class="ui header">{session.year}</div>
         <div className="ui embed">
           <iframe title="video player" src={session.link} />
       </div>

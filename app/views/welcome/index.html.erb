@@ -1,23 +1,25 @@
-<div class="ui container fluid banner ">
-  <div class="ui container pitch right aligned">
-    <h1><strong>Early recordings</strong><br> by the <strong> greatest bands</strong></h1>
-    <h3>As featured on John Peel radio show<br>from 1968 to 2004</h3>
-  </div>
-  <div class="link">
-    <%= link_to sessions_path do %>
-      <div class="btn btn-ghost pulse aligned center" >Browse</div>
-    <% end %>
+<div class="ui container fluid ">
+  <div class="ui fluid banner">
+    <div class="ui container pitch right aligned">
+      <h1><strong>Early recordings</strong><br> by the <strong> greatest bands</strong></h1>
+      <h3>As featured on John Peel radio show<br>from 1968 to 2004</h3>
+    </div>
+
+    <div class="link">
+      <%= link_to sessions_path do %>
+        <div class="btn btn-ghost pulse aligned center" >Browse</div>
+      <% end %>
+    </div>
   </div>
 </div>
+
+
+
 <div class="ui container">
   <div class="ui header center aligned text feats">
       <h2>Original Studio sessions</h2>
-      <h3>Over 1000 + recorded sessions spanning all genres from Blues and Punk-Rock to Reggae, New Wave and Electronic music. Featuring sessions by Bob Marley & The Wailers, David Bowie and the Spiders from Mars, Joy Division, Pet Shop Boys, The Fugees, Queen and many more  <br></br>
-      <%= link_to sessions_path do %>
-        <a class="btn btn-ghost aligned center" href="/sessions">Listen</a>
-      <% end %>
+      <h3>Over 1000 + recorded sessions spanning all genres from Blues and Punk-Rock to Reggae, New Wave and Electronic music. Featuring sessions by Bob Marley & The Wailers, David Bowie and the Spiders from Mars, Joy Division, Pet Shop Boys, The Fugees, Queen and many more
       </h3>
-    </div>
   </div>
 </div>
 <div class="ui container">
@@ -31,7 +33,7 @@
     <div class="ui fluid image">
       <%= image_tag ("joy_division-band.jpg") %>
       <div class="content">
-        <a class="header">Joy Division / 1979</a>
+        <div class="ui fluid header">Joy Division | 1979</div>
       </div>
     </div>
     <% end %>
@@ -43,7 +45,7 @@
     <div class="ui fluid image">
       <%= image_tag ("four-tet.jpg") %>
       <div class="content">
-        <a class="header">Four Tet / 2003</a>
+        <div class="header">Four Tet | 2003</div>
       </div>
     </div>
     <% end %>
@@ -55,7 +57,7 @@
     <div class="ui fluid image">
       <%= image_tag ("queen.jpg") %>
       <div class="content">
-        <a class="header">Queen / 1973</a>
+        <div class="header">Queen | 1973</div>
       </div>
     </div>
     <% end %>
@@ -68,16 +70,17 @@
     <div class="ui fluid image">
       <%= image_tag ("fugees.jpg") %>
       <div class="content">
-        <a class="header">The Fugees / 1996</a>
+        <div class="header">The Fugees | 1996</div>
       </div>
     </div>
     <% end %>
   </div>
 </div>
 
+
 <div class="ui container">
   <div class="ui header center aligned text feats">
-    <h6>Can you dig it ? Man i had lots of fun setting this up. It's a work in progress. Special thanks to strickson for fetching this list of sessions. Check out John Peel's fandom wiki for a rundown on the man's life. Don't forget to visit the John Peel center online, a project set up with the man's family.</h6>
-    <h6>guillaumelaine2.0@gmail.com - github.com/gglaine/peelsradio</h6>
+    <h5>Can you dig it ? Man i had lots of fun setting this up. It's a work in progress. Special thanks to strickson for fetching this list of sessions. Check out John Peel's fandom wiki for a rundown on the man's life. Don't forget to visit the John Peel center online, a project set up with the man's family.</h5>
+    <h5>guillaumelaine2.0@gmail.com - github.com/gglaine/peelsradio</h5>
   </div>
 </div>
