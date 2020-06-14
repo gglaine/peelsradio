@@ -1,5 +1,5 @@
 import React from "react"
-import { List, Divider } from 'semantic-ui-react'
+import { List, Card, Divider } from 'semantic-ui-react'
 
 class Sessions extends React.Component {
   render() {
@@ -15,17 +15,16 @@ class Sessions extends React.Component {
         <h3>Dig in {sessions.length} sessions</h3>
         <List>
           {sessions.map(session => (
-            <div class="session-list-card">
-              <List.Item key={session.id}>
-                <List.Header href={`/sessions/${session.id}`}>
-                  <h3>{session.band}</h3>
-                </List.Header>
-                <List.Header>
-                  {`${session.year}`}
-                </List.Header>
-              </List.Item>
-              <Divider horizontal></Divider>
-            </div>
+
+            <List.Item key={session.id} href={`/sessions/${session.id}`}>
+              <List.Header >
+                <h3>{session.band}</h3>
+              </List.Header>
+              <List.Header>
+                {session.year}
+              </List.Header>
+            </List.Item>
+
           ))}
         </List>
       </div>
@@ -34,3 +33,4 @@ class Sessions extends React.Component {
 }
 
 export default Sessions
+

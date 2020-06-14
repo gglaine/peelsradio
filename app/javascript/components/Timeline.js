@@ -11,8 +11,7 @@ class Timeline extends React.Component {
     };
     return (
       <div className="sessions" style={styles.container}>
-        <h1>All sessions: 1968 to 2004</h1>
-        <h3>Dig in {sessions.length} sessions</h3>
+        <h1>Timeline: 1968 to 2004</h1>
         <List>
           {sessions.map(session => (
             <div class="session-list-card">

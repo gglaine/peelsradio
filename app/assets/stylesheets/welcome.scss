@@ -13,24 +13,24 @@ strong {
   background-position: unset;
   padding: 150px 0;
   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('john-peel-at-desk.jpg') !important;
-  animation: slideDown;
-  animation-iteration-count: 1;
-  animation-duration: 2s;
-  transition-duration: 1.5s;
+  // animation: slideDown;
+  // animation-iteration-count: 1;
+  // animation-duration: 2s;
+  // transition-duration: 1.5s;
 }
 
 
-@keyframes slideDown {
-  0% {
-    padding-top: 0px;
-  }
-  50% {
-    padding-top: 50px;
-  }
-  100% {
-    padding-top: 53px;
-  }
-}
+// @keyframes slideDown {
+//   0% {
+//     padding-top: 0px;
+//   }
+//   50% {
+//     padding-top: 50px;
+//   }
+//   100% {
+//     padding-top: 53px;
+//   }
+// }
 
 
 
@@ -51,12 +51,12 @@ strong {
   font-weight: bold;
 }
 
-.banner p {
-  font-size: 20px;
-  color: white;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-}
+// .banner p {
+//   font-size: 20px;
+//   color: white;
+//   opacity: .7;
+//   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+// }
 
 .banner a .button--moema {
   text-align: center;
@@ -129,48 +129,9 @@ strong {
   opacity: 0.9;
   transition: opacity 0.3s ease;
 }
-.btn-ghost:hover {
-  opacity: 1;
-}
-
-
-// //BTN ANIM
-// .pulse {
-//   animation: pulse;
-//   animation-iteration-count: 2;
-//   animation-duration: 1.3s;
-//   opacity: 0.88;
-//   color: #fff;
-//   background: #1848db;
-//   text-align: center;
-//   width: 200px;
-//   margin: 0 auto;
-// }
-
-// @keyframes pulse {
-//   0% {
-//     transform: scale(1);
-//   }
-//   25% {
-//     transform: scale(1.05);
-//     border: 3px solid #4A4A4A;
-//   }
-//   50% {
-//     transform: scale(1.08);
-//   }
-//   75% {
-//     transform: scale(1.2);
-//     border: 5px solid #4A4A4A;
-//   }
-//   100% {
-//   transform: scale(1.1);
-//   }
-// }
-
 
 // BUTTON MOEMA
-//
-/* Moema */
+
 .button--moema {
   padding: 1.5em 3em;
   margin: 0 auto;
@@ -226,48 +187,7 @@ strong {
   -webkit-animation: anim-moema-2 0.3s 0.3s forwards;
   animation: anim-moema-2 0.3s 0.3s forwards;
 }
-@-webkit-keyframes anim-moema-1 {
-  60% {
-    -webkit-transform: scale3d(0.8, 0.8, 1);
-    transform: scale3d(0.8, 0.8, 1);
-  }
-  85% {
-    -webkit-transform: scale3d(1.1, 1.1, 1);
-    transform: scale3d(1.1, 1.1, 1);
-  }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-@keyframes anim-moema-1 {
-  60% {
-    -webkit-transform: scale3d(0.8, 0.8, 1);
-    transform: scale3d(0.8, 0.8, 1);
-  }
-  85% {
-    -webkit-transform: scale3d(1.1, 1.1, 1);
-    transform: scale3d(1.1, 1.1, 1);
-  }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-@-webkit-keyframes anim-moema-2 {
-  to {
-    opacity: 0;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-@keyframes anim-moema-2 {
-  to {
-    opacity: 0;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
+
 
 
 
