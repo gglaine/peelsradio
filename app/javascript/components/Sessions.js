@@ -11,8 +11,7 @@ class Sessions extends React.Component {
     };
     return (
       <div className="sessions" style={styles.container}>
-        <h1>Available Sessions 1968 - 2004</h1>
-        <h3>Dig in {sessions.length} sessions</h3>
+        <h1>All Bands - A to Z</h1>
         <List>
           {sessions.map(session => (
 
@@ -21,7 +20,7 @@ class Sessions extends React.Component {
                 <h3>{session.band}</h3>
               </List.Header>
               <List.Header>
-                {session.year}
+                <h5>{session.year}</h5>
               </List.Header>
             </List.Item>
 
