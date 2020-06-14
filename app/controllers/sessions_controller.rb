@@ -11,6 +11,6 @@ class SessionsController < ApplicationController
 
   def timelineup
     @sessions = Session.all.order(year: :asc)
-    render component: 'Sessions', props: { sessions: @sessions, yearsup: true }
+    render component: 'Timeline', props: { sessions: @sessions, yearsup: true }
   end
 end

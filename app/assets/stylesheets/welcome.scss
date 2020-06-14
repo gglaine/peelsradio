@@ -58,6 +58,17 @@ strong {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
+.banner a .button--moema {
+  text-align: center;
+}
+
+@media only screen and (min-width: 991px) {
+  .button--moema {
+    max-width: 150px;
+  }
+}
+
+
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .banner {
     height: 95vh;
@@ -89,10 +100,13 @@ strong {
     bottom: 18%;
   }
   .banner a {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   a {
     font-size: 1.5em;
+  }
+  .button--moema {
+    text-align: center;
   }
   .btn-ghost {
     border: 4px solid #2351de !important;
@@ -101,6 +115,8 @@ strong {
   .banner h1 {
     font-size: 44px !important;
   }
+
+
 }
 
 // BUTTON
@@ -118,38 +134,38 @@ strong {
 }
 
 
-//BTN ANIM
-.pulse {
-  animation: pulse;
-  animation-iteration-count: 2;
-  animation-duration: 1.3s;
-  opacity: 0.88;
-  color: #fff;
-  background: #1848db;
-  text-align: center;
-  width: 200px;
-  margin: 0 auto;
-}
+// //BTN ANIM
+// .pulse {
+//   animation: pulse;
+//   animation-iteration-count: 2;
+//   animation-duration: 1.3s;
+//   opacity: 0.88;
+//   color: #fff;
+//   background: #1848db;
+//   text-align: center;
+//   width: 200px;
+//   margin: 0 auto;
+// }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  25% {
-    transform: scale(1.05);
-    border: 3px solid #4A4A4A;
-  }
-  50% {
-    transform: scale(1.08);
-  }
-  75% {
-    transform: scale(1.2);
-    border: 5px solid #4A4A4A;
-  }
-  100% {
-  transform: scale(1.1);
-  }
-}
+// @keyframes pulse {
+//   0% {
+//     transform: scale(1);
+//   }
+//   25% {
+//     transform: scale(1.05);
+//     border: 3px solid #4A4A4A;
+//   }
+//   50% {
+//     transform: scale(1.08);
+//   }
+//   75% {
+//     transform: scale(1.2);
+//     border: 5px solid #4A4A4A;
+//   }
+//   100% {
+//   transform: scale(1.1);
+//   }
+// }
 
 
 // BUTTON MOEMA
@@ -157,6 +173,7 @@ strong {
 /* Moema */
 .button--moema {
   padding: 1.5em 3em;
+  margin: 0 auto;
   border-radius: 50px;
   background: #3049cf;
   color: #fff;
