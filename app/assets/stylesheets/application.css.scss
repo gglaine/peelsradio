@@ -23,6 +23,58 @@ body {
   font-family: 'Muli', sans-serif;
 }
 
+.react-player__preview {
+  margin-top: 12em;
+}
+
+@media only screen and (max-width: 991px) {
+  .react-player__preview {
+    margin-top: 0em;
+    height: 60vh !important;
+    position: relative !important;
+  }
+  .react-player__shadow {
+    // background: radial-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.64) 60%);
+    background: #2ca67c !important;
+    border-radius: 24px;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    transform: rotateZ(135deg);
+    width: 120px !important;
+    height: 120px !important;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .react-player__play-icon {
+    position: absolute !important;
+    bottom: 16%;
+    border-style: solid;
+    border-width: 50px 50px 50px 50px !important;
+    border-color: #28507f82 #c3414100 transparent #6b50503d !important;
+    transform: rotateZ(90deg) !important;
+  }
+  h1 {
+    font-size: 3em !important;
+  }
+  .ytp-title-channel-logo {
+    border-radius: 50%;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    flex-shrink: 0;
+    margin: 5px;
+  }
+  .ytp-title-beacon {
+    border-radius: 25px;
+    display: none !important;
+    position: absolute;
+    z-index: -1;
+    -moz-animation: ytp-title-beacon-pulse 2s 5;
+    -webkit-animation: ytp-title-beacon-pulse 2s 5;
+    animation: ytp-title-beacon-pulse 2s 5;
+  }
+}
+
 .menu {
 
 }

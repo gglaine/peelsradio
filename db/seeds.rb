@@ -16,7 +16,7 @@ sessions = doc.css('font>a').each do |session|
   band = session.text.match(/^[^\-]*/)
   year = session.text.match(/\d{4}/)
   yt_url = session['href'].to_s
-  link = yt_url
+  link = yt_url.gsub(/[[:space:]]/, '')
 
   session = Session.create( band: band, year: year, link: link )
 

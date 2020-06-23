@@ -6,7 +6,8 @@ class Sessions extends React.Component {
     const sessions = this.props.sessions;
     const styles = {
       container: {
-        padding: "3em !important;"
+        padding: "3em !important",
+        clipPath: "polygon(36% 6%, 100% 38%, 100% 100%, 0% 100%)"
       }
     };
     return (

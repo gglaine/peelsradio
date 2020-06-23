@@ -1,11 +1,13 @@
 import React from "react"
 import axios from "axios"
-import { List, Divider, Image } from 'semantic-ui-react'
+import ReactPlayer from "react-player"
+
+import { List, Container, Header, Divider, Image } from 'semantic-ui-react'
 
 class Session extends React.Component {
 
   state = {
-    artistpic: "yo"
+    artistpic: ""
   };
 
   componentDidMount() {
@@ -20,28 +22,48 @@ class Session extends React.Component {
   render() {
 
     const session = this.props.session;
+    console.log(session.link);
 
     const styles = {
       container: {
-        padding: "3em !important"
+        padding: "2em !important",
+        paddingTop: "4em !important"
       },
-      player: {
-        opacity: "0.8",
-        backgroundImage: `url(${this.state.artistpic})`
+      playerWrapper: {
+        position: 'relative',
+        paddingTop: '56.25%' /* Player ratio: 100 / (1280 / 720) */
+      },
+      reactPlayer: {
+        position: 'absolute',
+        top: '0',
+        left: '0',
+        border: '4px solid #191919 !important',
+        borderRadius: '22px !important'
       }
+
     };
+
+    const url = session.link
+    console.log(url);
 
 
     return (
       <div className="session" style={styles.container}>
-        <div className="ui header">{session.band}</div>
-        <div className="ui header">{session.year}</div>
-
-        <div className="ui embed"  >
-          <iframe title="video player" className="videoplayer" src={session.link} style={styles.player} controls="true" >
-            <Image src={this.state.artistpic} fluid />
-          </iframe>
-        </div>
+        <Header as='h1' textAlign='center' >{session.band}</Header>
+        <Header as='h3' textAlign='center'>{session.year}</Header>
+        <Container fluid style={styles.playerWrapper} >
+          <ReactPlayer
+            url={url}
+            width='100%'
+            controls
+            muted={0}
+            autoPlay={1}
+            playing={true}
+            light={this.state.artistpic}
+            style={styles.reactPlayer}
+            modestbranding={1}
+            />
+        </Container>
       </div>
 
     );
