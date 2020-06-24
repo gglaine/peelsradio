@@ -9,30 +9,10 @@ strong {
 // BANNER
 .banner {
   background-size: cover;
-  // background-position: center;
   background-position: unset;
   padding: 150px 0;
   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('john-peel-at-desk.jpg') !important;
-  // animation: slideDown;
-  // animation-iteration-count: 1;
-  // animation-duration: 2s;
-  // transition-duration: 1.5s;
 }
-
-
-// @keyframes slideDown {
-//   0% {
-//     padding-top: 0px;
-//   }
-//   50% {
-//     padding-top: 50px;
-//   }
-//   100% {
-//     padding-top: 53px;
-//   }
-// }
-
-
 
 .banner h1 {
   margin: 0;
@@ -50,13 +30,6 @@ strong {
   margin-top: 15px;
   font-weight: bold;
 }
-
-// .banner p {
-//   font-size: 20px;
-//   color: white;
-//   opacity: .7;
-//   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-// }
 
 .banner a .button--moema {
   text-align: center;
@@ -114,7 +87,6 @@ strong {
     color: #0affc0;
     -webkit-transition: background-color 0.3s, color 0.3s;
     transition: background-color 0.3s, color 0.3s;
-    animation: fadein 6s;
   }
   .btn-ghost {
     border: 4px solid #2351de !important;
@@ -148,7 +120,7 @@ strong {
   color: #fff;
   -webkit-transition: background-color 0.3s, color 0.3s;
   transition: background-color 0.3s, color 0.3s;
-  animation: fadein 6s;
+  animation: fadein 3s;
 }
 @keyframes fadein {
     0% {

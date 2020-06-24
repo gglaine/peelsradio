@@ -1,13 +1,13 @@
 import React from "react"
-import { List, Card, Divider } from 'semantic-ui-react'
+import { List, Card, Divider, Image } from 'semantic-ui-react'
 
 class Sessions extends React.Component {
+
   render() {
     const sessions = this.props.sessions;
     const styles = {
       container: {
         padding: "3em !important",
-        clipPath: "polygon(36% 6%, 100% 38%, 100% 100%, 0% 100%)"
       }
     };
     return (
@@ -16,7 +16,7 @@ class Sessions extends React.Component {
         <List>
           {sessions.map(session => (
 
-            <List.Item key={session.id} href={`/sessions/${session.id}`}>
+            <List.Item className="session" key={session.id} href={`/sessions/${session.id}`}>
               <List.Header >
                 <h3>{session.band}</h3>
               </List.Header>

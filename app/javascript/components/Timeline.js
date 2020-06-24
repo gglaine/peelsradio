@@ -6,7 +6,7 @@ class Timeline extends React.Component {
     const sessions = this.props.sessions;
     const styles = {
       container: {
-        padding: "3em !important;"
+        padding: "3em !important"
       }
     };
     return (
@@ -14,8 +14,8 @@ class Timeline extends React.Component {
         <h1>Timeline: 1968 to 2004</h1>
         <List>
           {sessions.map(session => (
-            <div class="session-list-card">
-              <List.Item key={session.id}>
+            <div className="session" key={session.id}>
+              <List.Item >
                 <List.Header>
                   {`${session.year}`}
                 </List.Header>

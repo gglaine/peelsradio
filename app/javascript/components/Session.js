@@ -31,7 +31,8 @@ class Session extends React.Component {
       },
       playerWrapper: {
         position: 'relative',
-        paddingTop: '56.25%' /* Player ratio: 100 / (1280 / 720) */
+        paddingTop: '56.25%', /* Player ratio: 100 / (1280 / 720) */
+        marginTop: '20%'
       },
       reactPlayer: {
         position: 'absolute',
