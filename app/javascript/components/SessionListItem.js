@@ -5,18 +5,18 @@ import { List, Image, Header } from 'semantic-ui-react'
 
 class SessionListItem extends React.Component {
 
-  // state = {
-  //   bandpic: ""
-  // };
+  state = {
+    bandpic: ""
+  };
 
-  // componentDidMount() {
-  //   axios.get(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${this.props.session.band}`)
-  //   .then((response) => {
-  //     console.log(response.data);
-  //     console.log(response.data.data[0].artist.picture_big);
-  //     this.setState({bandpic: response.data.data[0].artist.picture_big })
-  //   });
-  // }
+  componentDidMount() {
+    axios.get(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${this.props.session.band}`)
+    .then((response) => {
+      console.log(response.data);
+      console.log(response.data.data[0].artist.picture_big);
+      this.setState({bandpic: response.data.data[0].artist.picture_big })
+    });
+  }
 
 
 
@@ -30,7 +30,7 @@ class SessionListItem extends React.Component {
         <List.Header>
           <h5>{this.props.session.year}</h5>
         </List.Header>
-{/*        <Image fluid src={this.state.bandpic} />*/}
+        <Image fluid src={this.state.bandpic} />
       </List.Item>
     );
   }

@@ -21,14 +21,21 @@
       </div>
     <% end %>
     <%= link_to sessions_path do %>
-    <div class="header item ">
-      All sessions
-    </div>
+      <div class="header item ">
+        All sessions
+      </div>
     <%end%>
-    <%= link_to sixties_path do %>
-    <div class="header item ">
-      60's
-    </div>
-    <% end %>
+
+<!-- TODO DROPDOWN -->
+
   </div>
+  <% if user_signed_in? %>
+    <div class="header item ">
+    <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+    </div>
+  <% else %>
+    <div class="header item ">
+    <%= link_to('Login', new_user_session_path) %>
+    </div>
+  <% end %>
 </div>
