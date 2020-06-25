@@ -1,5 +1,6 @@
 import React from "react"
 import { List, Card, Divider, Image } from 'semantic-ui-react'
+import SessionListItem from './SessionListItem'
 
 class Sessions extends React.Component {
 
@@ -16,14 +17,7 @@ class Sessions extends React.Component {
         <List>
           {sessions.map(session => (
 
-            <List.Item className="session" key={session.id} href={`/sessions/${session.id}`}>
-              <List.Header >
-                <h3>{session.band}</h3>
-              </List.Header>
-              <List.Header>
-                <h5>{session.year}</h5>
-              </List.Header>
-            </List.Item>
+            <SessionListItem session={session} key={session.id}/>
 
           ))}
         </List>

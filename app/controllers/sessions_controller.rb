@@ -19,4 +19,6 @@ class SessionsController < ApplicationController
     @sessions = Session.where(year: ["1967", "1968", "1969"])
     render component: 'Sixties', props: { sessions: @sessions }
   end
+
+
 end

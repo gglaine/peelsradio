@@ -57,7 +57,7 @@ class Session extends React.Component {
             url={url}
             width='100%'
             controls
-            muted={0}
+            muted={false}
             autoPlay={1}
             playing={true}
             light={this.state.artistpic}

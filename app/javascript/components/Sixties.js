@@ -25,7 +25,7 @@ class Sixties extends React.Component {
                 <List.Header>
                   {session.year}
                 </List.Header>
-                <Image src="https://images.unsplash.com/photo-1496372412473-e8548ffd82bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+                <Image fluid src={this.state.bandpic} />
                 <List.Header href={`/sessions/${session.id}`}>
                   <h3>{session.band}</h3>
                 </List.Header>
