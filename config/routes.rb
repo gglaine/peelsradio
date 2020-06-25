@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'life', to: 'pages#life'
   get 'selected', to: 'pages#selected'
   get 'timeline', to: 'sessions#timelineup'
+  get 'sixties', to: 'sessions#sixties'
   resources :sessions
 
 
