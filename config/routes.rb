@@ -9,6 +9,13 @@ Rails.application.routes.draw do
   get 'selected', to: 'pages#selected'
   get 'timeline', to: 'sessions#timelineup'
   get 'sixties', to: 'sessions#sixties'
+  get 'seventies', to: 'sessions#seventies'
+  get 'lateseventies', to: 'sessions#lateseventies'
+  get 'eighties', to: 'sessions#eighties'
+  get 'lateeighties', to: 'sessions#lateeighties'
+  get 'nineties', to: 'sessions#nineties'
+  get 'latenineties', to: 'sessions#latenineties'
+  get 'oos', to: 'sessions#oos'
   resources :sessions
 
 

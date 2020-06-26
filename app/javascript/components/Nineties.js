@@ -3,8 +3,8 @@ import axios from "axios"
 import SessionListItem from './SessionListItem'
 import { List } from 'semantic-ui-react'
 
-class Sixties extends React.Component {
 
+class Nineties extends React.Component {
   render() {
 
     const sessions = this.props.sessions;
@@ -17,8 +17,8 @@ class Sixties extends React.Component {
 
     return (
       <div className="sessions" style={styles.container}>
-        <h1>60's</h1>
-        <h3>The very first guests on John Peel's playlist feature greats like Fleetwood Mac and Jethro Thull</h3>
+        <h1>90's</h1>
+        <h3>Hip Hop, TripHop and all sorts of good beats</h3>
         <List>
           {sessions.map(session => (
             <SessionListItem session={session} key={session.id}/>
@@ -29,4 +29,4 @@ class Sixties extends React.Component {
   }
 }
 
-export default Sixties
+export default Nineties

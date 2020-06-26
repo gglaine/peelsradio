@@ -15,16 +15,64 @@
         John Peel
       </div>
     <% end %>
-    <%= link_to timeline_path do %>
-      <div class="header item ">
-        Timeline
-      </div>
-    <% end %>
-    <%= link_to sessions_path do %>
-      <div class="header item ">
-        All sessions
-      </div>
-    <%end%>
+
+    <nav role="navigation">
+      <ul>
+        <li><a href="#">Timeline</a>
+          <ul class="dropdown">
+            <li>
+              <%= link_to sixties_path do %>
+              <div class="header item ">
+              60's
+              </div>
+            <% end %>
+            </li>
+            <li>
+            <%= link_to seventies_path do %>
+              <div class="header item ">
+                70-74
+              </div>
+            <% end %>
+            </li>
+            <li>
+            <%= link_to lateseventies_path do %>
+              <div class="header item ">
+                75-79
+              </div>
+            <% end %>
+            </li>
+            <li>
+            <%= link_to eighties_path do %>
+              <div class="header item ">
+                80-84
+              </div>
+            <% end %>
+            </li>
+            <li>
+            <%= link_to lateeighties_path do %>
+              <div class="header item ">
+                85-89
+              </div>
+            <% end %>
+            </li>
+            <li>
+            <%= link_to nineties_path do %>
+              <div class="header item ">
+                90's
+              </div>
+            <% end %>
+            </li>
+            <li>
+            <%= link_to oos_path do %>
+              <div class="header item ">
+                00's
+              </div>
+            <% end %>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
 
 <!-- TODO DROPDOWN -->
 
