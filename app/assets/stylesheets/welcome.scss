@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;500&display=swap');
+
 strong {
   color: #30ffe6;
 }
@@ -44,14 +46,14 @@ strong {
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .banner {
-    height: 95vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    animation: cam ease-in-out 4s;
-    animation-duration: 4s;
+    animation: cam ease-in-out 2s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
   }
@@ -83,7 +85,6 @@ strong {
     padding: 15.5em 8em;
     margin: 0 auto;
     border-radius: 50px;
-    background: #3049cf33;
     color: #0affc0;
     -webkit-transition: background-color 0.3s, color 0.3s;
     transition: background-color 0.3s, color 0.3s;
@@ -146,16 +147,16 @@ strong {
   right: -20px;
   // background: inherit;
   border-radius: 50px;
-  z-index: -1;
-  opacity: 0.4;
-  -webkit-transform: scale3d(0.8, 0.5, 1);
-  transform: scale3d(0.8, 0.5, 1);
+  // z-index: -1;
+  // opacity: 0.4;
+  // -webkit-transform: scale3d(0.8, 0.5, 1);
+  // transform: scale3d(0.8, 0.5, 1);
 }
 .button--moema:hover {
   -webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
   transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
   color: #ECEFF1;
-  background-color: #3f51b5;
+  background-color: #2b41b3;
   -webkit-animation: anim-moema-1 0.3s forwards;
   animation: anim-moema-1 0.3s forwards;
 }
@@ -191,11 +192,12 @@ strong {
   bottom: 0;
   margin: 0 auto;
   width: 100%;
-  font-size: 44px;
+  font-size: 1.5em;
   background: black;
   padding: 2em;
   opacity: 0.9;
   color: #fff;
+
 }
 
 .card .image .content:hover {

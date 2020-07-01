@@ -2,7 +2,7 @@ import React from "react"
 import axios from "axios"
 import ReactPlayer from "react-player"
 
-import { List, Container, Header, Divider, Image } from 'semantic-ui-react'
+import { List, Container, Header, Divider, Image, Icon } from 'semantic-ui-react'
 
 class Session extends React.Component {
 
@@ -27,12 +27,12 @@ class Session extends React.Component {
     const styles = {
       container: {
         padding: "2em !important",
-        paddingTop: "4em !important"
+        paddingTop: "2em !important"
       },
       playerWrapper: {
         position: 'relative',
         paddingTop: '56.25%', /* Player ratio: 100 / (1280 / 720) */
-        marginTop: '20%'
+        marginTop: '5%'
       },
       reactPlayer: {
         position: 'absolute',
@@ -49,10 +49,11 @@ class Session extends React.Component {
 
 
     return (
-      <div className="session" style={styles.container}>
+      <div className="session-player" style={styles.container}>
         <Header as='h1' textAlign='center' >{session.band}</Header>
+
         <Header as='h3' textAlign='center'>{session.year}</Header>
-        <Container fluid style={styles.playerWrapper} >
+        <Container fluid style={styles.playerWrapper}  className="react-pl" >
           <ReactPlayer
             url={url}
             width='100%'
@@ -60,10 +61,11 @@ class Session extends React.Component {
             muted={false}
             autoPlay={1}
             playing={true}
-            light={this.state.artistpic}
             style={styles.reactPlayer}
             modestbranding={1}
+
             />
+          <Icon circular inverted size='small' color='teal' name='like' />
         </Container>
       </div>
 

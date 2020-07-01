@@ -17,9 +17,9 @@ class OOs extends React.Component {
 
     return (
       <div className="sessions" style={styles.container}>
-        <h1>2000's</h1>
-        <h3>End of the ride</h3>
-        <List>
+        <h1 className="title">2000's</h1>
+        <h3 className="desc">End of the ride</h3>
+        <List className="sessions-list">
           {sessions.map(session => (
             <SessionListItem session={session} key={session.id}/>
           ))}

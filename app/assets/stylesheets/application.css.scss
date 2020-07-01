@@ -20,9 +20,198 @@
 
 body {
   background: #06091a;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
+a:hover img {
+  transform: scale(1.02);
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+}
+
+.title-header {
+  margin-top: 2em !important;
+  margin-bottom: 2em !important;
+}
+
+
+.genre-cont{
+  position: relative !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ui img {
+ background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+}
+
+.genre-cont .genre-name {
+  position: absolute !important;
+  margin: auto;
+  color: #fff !important;
+  font-size: 3em !important;
+  font-family: "Muli", sans-serif !important;
+  font-weight: 700;
+}
+
+
+// NAVBAR
+
+.navbar {
+  background: black !important;
+}
+
+.navbar .item {
+  color: #bfbfbf !important;
+}
+
+.navbar .item:hover {
+  color: blue !important;
+}
+
+.btn-home {
+  display: flex;
+  justify-content: space-around;
+}
+
+// NAVBAR BUTTONS
+
+.btn-ghost-left {
+  color: #fff;
+  border: 2px solid #d5d3d3;
+  font-style: italic;
+  padding: 8px 24px;
+  border-radius: 20px 0% 0% 20px;
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+  font-weight: lighter;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.btn-ghost-left:hover {
+  border: 2px solid blue;
+}
+.btn-ghost-right {
+  color: #7f7777;
+  margin-left: -50px;
+  border: 2px solid #d5d3d3;
+  padding: 8px 24px;
+  border-radius: 0px 20px 20px 0px;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  font-weight: lighter;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+// FOOTER
+
+.footer {
+  min-height: 30vh !important;
+  margin-top: 5em !important;
+  background: black !important;
+  padding: 1em !important;
+}
+
+.card {
+  margin-bottom: 2em !important;
+}
+
+// USER REGISTRATION
+.container .title {
+  color: #fff;
+  font-size: 24px;
+  padding: 1em;
+}
+
+.form-container {
+  background: blue;
+  width: 70% !important;
+  display: flex;
+  height: 80vh !important;
+  justify-content: space-around;
+  align-items: center;
+  background: url("https://miro.medium.com/max/2000/1*cbj7ApyGc_pb01L4WpwNfA.jpeg") !important;
+}
+
+.new_user {
+  padding: 4em !important;
+  background: red !important;
+    border-radius: 8px;
+    padding: 1em;
+        flex-direction: column;
+    justify-content: flex-end;
+    height: 80vh !important;
+    margin-top: 1em;
+}
+
+.new_user .field {
+  color: #ffffff;
+  font-size: 1.1em;
+  padding-left: 10px;
+  width: 100%;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+
+.field {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100 !important;
+  margin-bottom: 1em;
+}
+
+.field label {
+  flex: 1 1 20%;
+}
+
+.field input {
+  flex: 1 1 80%;
+}
+
+.field .checkbox {
+  flex: 1 1 5%;
+  margin-right: 16px;
+}
+
+.field .labelds {
+  flex: 1 1 95%;
+  margin-left: 4px;
+}
+
+.new_user input {
+  background: #3f3f3f;
+  width: 100%;
+  height: 50px;
+  border-radius: 12px;
+}
+
+
+.new_user .actions input {
+  color: blue;
+  width: 50%;
+  background: #48da48a1;
+  font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+.ftt {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+  color: #fff !important;
+}
+
+
+#player {
+      clip-path: polygon(0 88%, 100% 88%, 100% 100%, 0% 100%);
+}
+
+// NAVBAR DROPDOWN
 
 
 ul {
@@ -84,11 +273,103 @@ ul li ul li {
   width: 100%;
 }
 
+// REACT PLAYER
+
 .react-player__preview {
   margin-top: 12em;
 }
 
+
+// MEDIA QUERIES MOBILE
+
+
 @media only screen and (max-width: 991px) {
+  .links {
+    padding: 2em;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .form-container {
+    background: blue;
+    width: 70% !important;
+    position: relative;
+    height: 36vh !important;
+    margin-top: 55% !important;
+
+  }
+
+  .form-container .new-user {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+  }
+
+
+  .new_user {
+    padding: 4em !important;
+    background: #000101c4 !important;
+    height: 65% !important;
+      border-radius: 8px;
+      padding: 1em;
+  display: flex;
+      flex-direction: column !important;
+      justify-content: flex-end !important;
+      margin-top: 1em;
+  }
+
+  .new_user .field {
+  color: #ffffff;
+      font-size: 1.1em;
+      padding-left: 10px;
+      width: 100%;
+      font-weight: 700;
+      margin-bottom: 1em;
+  }
+
+  .new-user .actions {
+    color: red;
+  }
+
+  .field {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100 !important;
+    margin-bottom: 1em;
+  }
+
+  .field label {
+    flex: 1 1 20%;
+    font-weight: 100;
+    margin-right: 20px;
+  }
+
+  .field input {
+    flex: 1 1 80%;
+  }
+
+  .field .checkbox {
+    flex: 1 1 5%;
+  }
+
+  .field .labelds {
+    flex: 1 1 95%;
+  }
+
+  .new_user input {
+  background: #3f3f3f;
+      width: 100%;
+      height: 50px;
+      border-radius: 12px;
+  }
+
+  .new_user .actions input {
+    color: #fff;
+    width: 100%;
+    font-size: 20px;
+  }
+
   .react-player__preview {
     margin-top: 0em;
     height: 60vh !important;
@@ -112,9 +393,9 @@ ul li ul li {
     bottom: 0;
     left: 0;
     border-style: solid;
-    border-width: 50px 50px 50px 50px !important;
-    border-color: #38b33e #2b8afbf2 #3bc928db #4CAF50 !important;
-    transform: rotateZ(90deg) !important;
+    // border-width: 50px 50px 50px 50px !important;
+    // border-color: #38b33e #2b8afbf2 #3bc928db #4CAF50 !important;
+    // transform: rotateZ(90deg) !important;
   }
   h1 {
     font-size: 3em !important;
@@ -137,56 +418,5 @@ ul li ul li {
   }
 }
 
-.menu {
 
-}
 
-.card {
-  margin-bottom: 2em !important;
-}
-
-.navbar {
-  background: black !important;
-}
-
-.navbar .item {
-  color: #bfbfbf !important;
-}
-
-.navbar .item:hover {
-  color: blue !important;
-}
-
-.btn-home {
-  display: flex;
-  justify-content: space-around;
-}
-
-// NAVBAR BRAND BUTTONS
-
-.btn-ghost-left {
-  color: #fff;
-  border: 2px solid #d5d3d3;
-  font-style: italic;
-  padding: 8px 24px;
-  border-radius: 20px 0% 0% 20px;
-  clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
-  font-weight: lighter;
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-.btn-ghost-left:hover {
-  border: 2px solid blue;
-}
-.btn-ghost-right {
-  color: #7f7777;
-  margin-left: -50px;
-  border: 2px solid #d5d3d3;
-  padding: 8px 24px;
-  border-radius: 0px 20px 20px 0px;
-  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
-  font-weight: lighter;
-  opacity: 0.9;
-  transition: opacity 0.3s ease;
-}

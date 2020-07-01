@@ -56,4 +56,8 @@ class SessionsController < ApplicationController
     render component: 'OOs', props: { sessions: @sessions }
   end
 
+  def explore
+    render component: 'Explore'
+  end
+
 end
