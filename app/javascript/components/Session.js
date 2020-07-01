@@ -22,6 +22,7 @@ class Session extends React.Component {
   render() {
 
     const session = this.props.session;
+    const related = this.props.related;
     console.log(session.link);
 
     const styles = {
@@ -47,12 +48,16 @@ class Session extends React.Component {
     const url = session.link
     console.log(url);
 
+    console.log(related);
 
     return (
       <React.Fragment >
       <Header as='h1' textAlign='center' >{session.band}</Header>
 
       <Header as='h3' textAlign='center'>{session.year}</Header>
+
+
+
       <div className="session-player" style={styles.container}>
 
         <Container fluid style={styles.playerWrapper}  className="react-pl" >
@@ -69,6 +74,18 @@ class Session extends React.Component {
             />
           <Icon circular inverted size='small' color='teal' name='like' />
         </Container>
+      </div>
+      <div className="tagslist">
+          {
+        related.map( rlt => (
+          <div className="tag-item" >
+
+             {rlt.toString()}
+
+          </div>
+        ))
+       }
+
       </div>
       </React.Fragment>
 

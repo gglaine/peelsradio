@@ -25,6 +25,24 @@ body {
   background: #06091a;
 }
 
+.tagslist {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  color: #fff !important;
+
+  padding-left: 1em !important;
+  margin-right: 6px !important;
+  font-family: "Dosis", sans-serif;
+  font-weight: 200;
+  padding-left: 3em;
+}
+
+.tagslist .tag-item {
+  margin-right: 10px !important;
+  font-size: 2em !important;
+}
+
 .title-header {
   font-family: 'Rubik Mono One', sans-serif !important;
 }
@@ -65,6 +83,15 @@ a:hover img {
 
 .ui img {
  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+}
+
+i.inverted.circular.teal.icon {
+    background-color: #313131 !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    color: #FFFFFF !important;
+    font-size: 2em !important;
+    margin-bottom: 1em !important;
 }
 
 .genre-cont .genre-name {

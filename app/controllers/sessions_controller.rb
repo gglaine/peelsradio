@@ -8,7 +8,8 @@ class SessionsController < ApplicationController
   def show
     react_rails_prerenderer
     @session = Session.find(params[:id])
-    render component: 'Session', props: { session: @session }, prerender: true
+    @related_sessions = @session.tag_list
+    render component: 'Session', props: { session: @session, related: @related_sessions }, prerender: true
   end
 
   def timelineup
