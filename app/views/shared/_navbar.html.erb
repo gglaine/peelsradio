@@ -20,27 +20,14 @@
         Genres
       </div>
     <% end %>
-    <%= link_to timeline_path do %>
-      <div class="header item ">
-        Timeline
-      </div>
-    <% end %>
-    <%= link_to timeline_path do %>
-      <div class="header item ">
-        My Peels
-      </div>
-    <% end %>
-
   </div>
 
   <% if user_signed_in? %>
-
-
     <div class="header item ">
     <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
     </div>
   <% else %>
-    <div class="header item ">
+    <div class="header item login-btn ">
     <%= link_to('Login', new_user_session_path) %>
     </div>
   <% end %>

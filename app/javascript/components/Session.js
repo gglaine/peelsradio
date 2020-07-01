@@ -49,10 +49,12 @@ class Session extends React.Component {
 
 
     return (
-      <div className="session-player" style={styles.container}>
-        <Header as='h1' textAlign='center' >{session.band}</Header>
+      <React.Fragment >
+      <Header as='h1' textAlign='center' >{session.band}</Header>
 
-        <Header as='h3' textAlign='center'>{session.year}</Header>
+      <Header as='h3' textAlign='center'>{session.year}</Header>
+      <div className="session-player" style={styles.container}>
+
         <Container fluid style={styles.playerWrapper}  className="react-pl" >
           <ReactPlayer
             url={url}
@@ -68,6 +70,7 @@ class Session extends React.Component {
           <Icon circular inverted size='small' color='teal' name='like' />
         </Container>
       </div>
+      </React.Fragment>
 
     );
   }

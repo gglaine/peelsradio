@@ -60,4 +60,5 @@ class SessionsController < ApplicationController
     render component: 'Explore'
   end
 
+
 end
