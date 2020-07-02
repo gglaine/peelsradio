@@ -10,35 +10,43 @@ class Explore extends React.Component {
   const genres = [
     {
       name: "COLD WAVE",
-      pic: "https://www.typeroom.eu/assets/original/2020/05/18/JoyDivision-UnknownPleasures-B1.jpg"
+      pic: "https://www.typeroom.eu/assets/original/2020/05/18/JoyDivision-UnknownPleasures-B1.jpg",
+      link: "/coldwave"
     },
     {
       name: "ROCK",
-      pic: "https://music-planet.fr/wp-content/uploads/2020/05/David-Bowie-DR.jpg"
+      pic: "https://music-planet.fr/wp-content/uploads/2020/05/David-Bowie-DR.jpg",
+      link: "/rock"
     },
     {
       name: "FOLK",
-      pic: "https://rock6070.e-monsite.com/medias/images/fairport-convention-2.jpg"
+      pic: "https://rock6070.e-monsite.com/medias/images/fairport-convention-2.jpg",
+      link: "/"
     },
     {
       name: "BLUES",
-      pic: "https://i.pinimg.com/originals/cf/83/65/cf83655c524f675d387183a91bd2a97f.jpg"
+      pic: "https://i.pinimg.com/originals/cf/83/65/cf83655c524f675d387183a91bd2a97f.jpg",
+      link: "/blues"
     },
     {
       name: "DUB",
-      pic: "https://www.electronicbeats.net/app/uploads/2017/07/dub-music-primer.jpeg"
+      pic: "https://www.electronicbeats.net/app/uploads/2017/07/dub-music-primer.jpeg",
+      link: "/reggae"
     },
     {
       name: "HARD ROCK",
-      pic: "https://www.pixbear.com/wp-content/uploads/2019/10/motorhead_quizz_1.jpg"
+      pic: "https://www.pixbear.com/wp-content/uploads/2019/10/motorhead_quizz_1.jpg",
+      link: "/"
     },
     {
       name: "ELECTRO",
-      pic: "https://rtvc-assets-radionica3.s3.amazonaws.com/s3fs-public/senalradionica/articulo-noticia/galeriaimagen/1094782_526949487360441_1889061841_n7.jpg"
+      pic: "https://rtvc-assets-radionica3.s3.amazonaws.com/s3fs-public/senalradionica/articulo-noticia/galeriaimagen/1094782_526949487360441_1889061841_n7.jpg",
+      link: "/electronic"
     },
     {
       name: "TRIPPY",
-      pic: "https://thevinylfactory.com/wp-content/uploads/2014/09/miles-davis-cover3-660x398.png"
+      pic: "https://thevinylfactory.com/wp-content/uploads/2014/09/miles-davis-cover3-660x398.png",
+      link: "/"
     }
   ];
 
@@ -83,7 +91,7 @@ class Explore extends React.Component {
             genres.map((ge) => (
 
             <Grid.Column >
-              <a href="/sixties">
+              <a href={ge.link}>
               <div className="genre-cont">
                 <Image className="genre-img" src={ge.pic} />
                 <div className="genre-name">{ge.name}</div>

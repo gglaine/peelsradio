@@ -2,7 +2,12 @@ Rails.application.routes.draw do
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
-  devise_for :models
+
+  devise_scope :user do
+    match '/sessions/user', to: 'devise/sessions#create', via: :post
+  end
+
+  resources :sessions
   get 'pages/life'
   root 'welcome#index'
   get 'welcome/index'
@@ -18,7 +23,13 @@ Rails.application.routes.draw do
   get 'latenineties', to: 'sessions#latenineties'
   get 'oos', to: 'sessions#oos'
   get 'explore', to: 'sessions#explore'
-  resources :sessions
+  get 'rock', to: 'sessions#rock'
+  get 'brit', to: 'sessions#brit'
+  get 'blues', to: 'sessions#blues'
+  get 'reggae', to: 'sessions#reggae'
+  get 'electronic', to: 'sessions#electronic'
+  get 'coldwave', to: 'sessions#coldwave'
+
 
 
 
