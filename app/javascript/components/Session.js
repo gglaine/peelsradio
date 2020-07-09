@@ -46,9 +46,6 @@ class Session extends React.Component {
     };
 
     const url = session.link
-    console.log(url);
-
-    console.log(related);
 
     return (
       <React.Fragment >

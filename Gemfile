@@ -32,6 +32,8 @@ gem 'semantic-ui-sass'
 
 gem 'acts-as-taggable-on', '~> 6.0'
 
+gem 'acts_as_favoritor'
+
 gem 'rails_admin', '~> 2.0'
 
 group :development, :test do

@@ -28,13 +28,16 @@ strong {
   margin: 0;
   color: #9b9b9b;
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-  font-size: 2em;
+  font-size: 1.35em;
   margin-top: 15px;
   font-weight: bold;
 }
 
 .banner a .button--moema {
   text-align: center;
+  background: #1e3331cc !important;
+  color: #30ffe6 !important;
+  font-size: 1.2em !important;
 }
 
 @media only screen and (min-width: 991px) {
@@ -75,10 +78,10 @@ strong {
     bottom: 18%;
   }
   .banner a {
-    font-size: 1.22em;
+    font-size: 1em;
   }
   a {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .button--moema {
     text-align: center;
@@ -94,7 +97,7 @@ strong {
     padding: 30px 24px !important;
   }
   .banner h1 {
-    font-size: 4em;
+    font-size: 2em;
   }
 
 

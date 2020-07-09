@@ -8,12 +8,18 @@ Rails.application.routes.draw do
   end
 
   resources :sessions
-  get 'pages/life'
   root 'welcome#index'
   get 'welcome/index'
+
+
+#pages
+  get 'explore', to: 'sessions#explore'
   get 'life', to: 'pages#life'
   get 'selected', to: 'pages#selected'
-  get 'timeline', to: 'sessions#timelineup'
+
+  get 'mypeels', to: 'sessions#mypeels'
+
+# timeline
   get 'sixties', to: 'sessions#sixties'
   get 'seventies', to: 'sessions#seventies'
   get 'lateseventies', to: 'sessions#lateseventies'
@@ -22,17 +28,14 @@ Rails.application.routes.draw do
   get 'nineties', to: 'sessions#nineties'
   get 'latenineties', to: 'sessions#latenineties'
   get 'oos', to: 'sessions#oos'
-  get 'explore', to: 'sessions#explore'
+
+# genres
   get 'rock', to: 'sessions#rock'
   get 'brit', to: 'sessions#brit'
   get 'blues', to: 'sessions#blues'
   get 'reggae', to: 'sessions#reggae'
   get 'electronic', to: 'sessions#electronic'
   get 'coldwave', to: 'sessions#coldwave'
-
-
-
-
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

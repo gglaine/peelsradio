@@ -25,6 +25,12 @@ body {
   background: #06091a;
 }
 
+.peellist {
+  min-height: 100vh !important;
+  height: 50vh !important;
+  background: red !important;
+}
+
 .tagslist {
   display: flex !important;
   justify-content: flex-start !important;
@@ -487,9 +493,7 @@ i.inverted.circular.teal.icon {
     // border-color: #38b33e #2b8afbf2 #3bc928db #4CAF50 !important;
     // transform: rotateZ(90deg) !important;
   }
-  h1 {
-    font-size: 3em !important;
-  }
+
   .ytp-title-channel-logo {
     border-radius: 50%;
     opacity: 0 !important;

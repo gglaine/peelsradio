@@ -24,7 +24,7 @@
 
   <% if user_signed_in? %>
     <div class="header item ">
-    <%= link_to('Mypeels') %>
+    <%= link_to('Mypeels', mypeels_path) %>
     </div>
     <div class="header item ">
     <%= link_to('Logout', destroy_user_session_path, method: :delete) %>

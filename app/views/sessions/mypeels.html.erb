@@ -1,0 +1,8 @@
+<div class="ui container mypeels">
+  <% @favorites.each do |fav| %>
+  <div class="ui card peellist">
+  <%= react_component('SessionListItem', { session: Session.find("#{fav.favoritable_id}")}, {prerender: true}) %>
+  </div>
+
+  <% end %>
+</div>

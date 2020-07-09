@@ -12,10 +12,15 @@ class SessionsController < ApplicationController
     render component: 'Session', props: { session: @session, related: @related_sessions }, prerender: true
   end
 
-  def timelineup
-    @sessions = Session.all.order(year: :asc)
-    render component: 'Timeline', props: { sessions: @sessions, yearsup: true }
+  def mypeels
+    @user = current_user
+    @favorites = @user.all_favorites
   end
+
+  # def timelineup
+  #   @sessions = Session.all.order(year: :asc)
+  #   render component: 'Timeline', props: { sessions: @sessions, yearsup: true }
+  # end
 
   def sixties
     @sessions = Session.where(year: ["1967", "1968", "1969"])
@@ -59,10 +64,6 @@ class SessionsController < ApplicationController
 
   def explore
     render component: 'Explore'
-  end
-
-  def mypeels
-    render component: 'Mypeels'
   end
 
   def rock
