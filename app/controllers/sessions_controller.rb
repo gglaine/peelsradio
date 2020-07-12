@@ -17,11 +17,6 @@ class SessionsController < ApplicationController
     @favorites = @user.all_favorites
   end
 
-  # def timelineup
-  #   @sessions = Session.all.order(year: :asc)
-  #   render component: 'Timeline', props: { sessions: @sessions, yearsup: true }
-  # end
-
   def sixties
     @sessions = Session.where(year: ["1967", "1968", "1969"])
     render component: 'Sixties', props: { sessions: @sessions }
@@ -68,7 +63,7 @@ class SessionsController < ApplicationController
 
   def rock
     @sessions = Session.tagged_with("Rock")
-    render component: 'Genre', props: { sessions: @sessions}
+    render component: 'Genre', props: { sessions: @sessions }
   end
 
   def brit

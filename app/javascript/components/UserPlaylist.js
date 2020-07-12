@@ -1,15 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Grid, Header, List, Card, Image, Icon } from 'semantic-ui-react'
-import SessionListItem from './SessionListItem'
-
-
-class Genre extends React.Component {
+class UserPlaylist extends React.Component {
   render() {
 
     const sessions = this.props.sessions;
-
-
     const styles = {
       container: {
         padding: "3em !important"
@@ -19,10 +13,10 @@ class Genre extends React.Component {
 
     return (
       <div className="sessions" style={styles.container}>
-        <List>
-
+        <h1 className="title">2000's</h1>
+        <h3 className="desc">End of the ride</h3>
+        <List className="sessions-list">
           {sessions.map(session => (
-
             <SessionListItem session={session} key={session.id}/>
           ))}
         </List>
@@ -31,4 +25,4 @@ class Genre extends React.Component {
   }
 }
 
-export default Genre
+export default UserPlaylist

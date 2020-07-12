@@ -83,7 +83,7 @@ class Explore extends React.Component {
     return (
       <React.Fragment >
       <div className="ui container ">
-        <Header  className="title-header" as="h1" textAlign='center' ><span class="title-light">Explore</span>GENRES</Header>
+        <Header  className="title-header" as="h1" textAlign='center' ><span className="title-light">Explore</span>GENRES</Header>
       </div>
         <div className="ui container">
           <Grid stackable columns={2} >

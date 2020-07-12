@@ -28,7 +28,8 @@ class Session extends React.Component {
     const styles = {
       container: {
         padding: "2em !important",
-        paddingTop: "2em !important"
+        paddingTop: "0em !important",
+        marginTop: "2em !important"
       },
       playerWrapper: {
         position: 'relative',

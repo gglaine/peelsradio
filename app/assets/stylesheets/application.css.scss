@@ -23,6 +23,8 @@
 
 body {
   background: #06091a;
+  max-width: 1980px !important;
+  margin: 0 auto;
 }
 
 .peellist {
@@ -46,7 +48,6 @@ body {
 
 .tagslist .tag-item {
   margin-right: 10px !important;
-  font-size: 2em !important;
 }
 
 .title-header {
@@ -122,8 +123,8 @@ i.inverted.circular.teal.icon {
 }
 
 .navbar .item {
-  color: #167cbc !important;
-  font-size: 1.12em !important;
+  color: #26768a !important;
+  font-size: 1em !important;
 }
 
 .navbar .item:hover {
@@ -133,7 +134,7 @@ i.inverted.circular.teal.icon {
 .login-btn {
   border: 1px solid #fff;
   padding: 2px;
-  border-radius: 50%;
+  border-radius: 5%;
 }
 
 .btn-home {
