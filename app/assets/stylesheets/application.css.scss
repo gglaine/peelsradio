@@ -14,17 +14,41 @@
  *= require_self
  */
 
-
+@import "font-awesome-sprockets";
+@import "font-awesome";
 @import "semantic-ui";
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&display=swap');
+
 
 body {
   background: #06091a;
   max-width: 1980px !important;
   margin: 0 auto;
+}
+
+.user-playlist-item {
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1em;
+  padding-left: 1em;
+  i {
+    align-self: center;
+    flex: 0 1 10%;
+  }
+  .name {
+    flex: 0 1 80%;
+  }
+  .year {
+    flex: 0 1 10%;
+  }
+}
+
+.mypeels {
+  padding: 3em;
 }
 
 .peellist {
@@ -63,6 +87,7 @@ body {
 .footlist {
   padding: 2em !important;
   font-size: 1.1em !important;
+  margin-top: 50% !important
 }
 
 .footlist .btn-home {

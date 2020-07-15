@@ -1,0 +1,4 @@
+<div class="like-icon " data-id="<%= session.id %>">
+  <i class="fas fa-heart <%= 'red' if current_user.favorited?(session) %>" ></i>
+</div>
+

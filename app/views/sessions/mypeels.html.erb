@@ -1,8 +1,14 @@
 <div class="ui container mypeels">
-  <% @favorites.each do |fav| %>
-  <div class="ui card peellist">
-  <%= react_component('SessionListItem', { session: Session.find("#{fav.favoritable_id}")}, {prerender: true}) %>
+  <h1>FAVORITE SESSIONS STREAM</h1>
+  <%= react_component('UserPlayer', { sessions: @sessions }, {prerender: true}) %>
+  <h1>FAVORITE SESSIONS</h1>
+  <div class="ui relaxed divided list">
+    <% @favorites.each do |fav| %>
+      <%= react_component('UserPlaylistItem', { session: Session.find("#{fav.favoritable_id}")}, {prerender: true}) %>
+    <% end %>
   </div>
-
-  <% end %>
+  <h3>
+  <%= link_to "Back to explore", explore_path %>
+  </h3>
 </div>
+

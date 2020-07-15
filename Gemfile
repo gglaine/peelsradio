@@ -29,6 +29,7 @@ gem 'devise'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'semantic-ui-sass'
+gem 'font-awesome-sass', '~> 5.13.0'
 
 gem 'acts-as-taggable-on', '~> 6.0'
 

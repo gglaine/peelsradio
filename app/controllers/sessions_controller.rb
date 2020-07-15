@@ -2,7 +2,12 @@ class SessionsController < ApplicationController
 
   def index
     @sessions = Session.all
-    render component: 'Sessions', props: { sessions: @sessions }
+    # render component: 'Sessions', props: { sessions: @sessions }
+    @favorite_sessions = current_user.favorited_by_type('Session')
+  end
+
+  def explore
+    render component: 'Explore'
   end
 
   def show
@@ -15,7 +20,18 @@ class SessionsController < ApplicationController
   def mypeels
     @user = current_user
     @favorites = @user.all_favorites
+    @sessions = @user.favorited_sessions
+    # render component: 'Mypeels', props: { sessions: @sessions }, prerender: true
   end
+
+  def toggle_favorite
+    @session = Session.find(params[:id])
+    current_user.favorited?(@session) ? current_user.unfavorite(@session) : current_user.favorite(@session)
+    flash.now[:notice] = "Session #{@session} saved"
+  end
+
+
+# /////////////////////////////
 
   def sixties
     @sessions = Session.where(year: ["1967", "1968", "1969"])
@@ -57,13 +73,18 @@ class SessionsController < ApplicationController
     render component: 'OOs', props: { sessions: @sessions }
   end
 
-  def explore
-    render component: 'Explore'
-  end
+  # ///////////////////////////
+
+
+
+
+
+
+  # /////////////////////////////
 
   def rock
     @sessions = Session.tagged_with("Rock")
-    render component: 'Genre', props: { sessions: @sessions }
+    # render component: 'Genre', props: { sessions: @sessions }
   end
 
   def brit

@@ -7,7 +7,15 @@ Rails.application.routes.draw do
     match '/sessions/user', to: 'devise/sessions#create', via: :post
   end
 
-  resources :sessions
+  resources :sessions do
+    member do
+      post 'toggle_favorite', to: "sessions#toggle_favorite"
+    end
+  end
+
+
+
+
   root 'welcome#index'
   get 'welcome/index'
 

@@ -17,13 +17,13 @@ class Session extends React.Component {
       console.log(response.data.data[0].artist.picture_big);
       this.setState({artistpic: response.data.data[0].artist.picture_big })
     });
+    axios.get(`https://www.mediawiki.org/w/api.php?action=query&format=json&prop=extracts&titles=${this.props.session.band}&formatversion=2`)
+    .then((response) => {
+      console.log(response.data);
+    });
   }
 
   render() {
-
-    const session = this.props.session;
-    const related = this.props.related;
-    console.log(session.link);
 
     const styles = {
       container: {
@@ -37,16 +37,17 @@ class Session extends React.Component {
         marginTop: '5%'
       },
       reactPlayer: {
-        position: 'absolute',
-        top: '0',
-        left: '0',
+        position: 'relative !important',
         border: '4px solid #191919 !important',
         borderRadius: '22px !important'
       }
 
     };
 
+    const session = this.props.session;
     const url = session.link
+    const related = this.props.related;
+    console.log(session.link);
 
     return (
       <React.Fragment >

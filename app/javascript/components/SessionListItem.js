@@ -30,7 +30,6 @@ class SessionListItem extends React.Component {
         <List.Header as="h5" className="year">
           {this.props.session.year}
         </List.Header>
-        <Icon circular inverted size='small' color='teal' name='like' />
       </List.Item>
     );
   }

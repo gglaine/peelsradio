@@ -1,5 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
+import SessionListItem from "./SessionListItem"
+
+import { List } from 'semantic-ui-react'
+
 class UserPlaylist extends React.Component {
   render() {
 
@@ -13,8 +17,7 @@ class UserPlaylist extends React.Component {
 
     return (
       <div className="sessions" style={styles.container}>
-        <h1 className="title">2000's</h1>
-        <h3 className="desc">End of the ride</h3>
+        <h1 className="title">MY FAVORITE SESSIONS</h1>
         <List className="sessions-list">
           {sessions.map(session => (
             <SessionListItem session={session} key={session.id}/>
