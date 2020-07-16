@@ -19,7 +19,7 @@ class Explore extends React.Component {
     },
     {
       name: "ROCK",
-      pic: "https://music-planet.fr/wp-content/uploads/2020/05/David-Bowie-DR.jpg",
+      pic: "https://papyblues.com/wp-content/uploads/2018/05/frf.png",
       link: "/rock"
     },
     {
@@ -28,8 +28,8 @@ class Explore extends React.Component {
       link: "/folk"
     },
     {
-      name: "GEMS",
-      pic: "https://d11mgq5hlnsdgo.cloudfront.net/4a28fd5d-6b13-40a1-910d-a993cfd47c7f.jpg",
+      name: "SOUL",
+      pic: "https://res-4.cloudinary.com/dostuff-media/image/upload//c_fill,g_faces,f_auto,w_800/v1478481314/event-poster-6920933.jpg",
       link: "/gems"
     },
     {
@@ -38,8 +38,8 @@ class Explore extends React.Component {
       link: "/blues"
     },
     {
-      name: "DUB",
-      pic: "https://www.electronicbeats.net/app/uploads/2017/07/dub-music-primer.jpeg",
+      name: "REGGAE | DUB",
+      pic: "https://melcirclesdotcom.files.wordpress.com/2017/05/jamaican-soundsystem.jpg?w=640",
       link: "/reggae"
     },
     {
@@ -52,6 +52,7 @@ class Explore extends React.Component {
       pic: "https://rtvc-assets-radionica3.s3.amazonaws.com/s3fs-public/senalradionica/articulo-noticia/galeriaimagen/1094782_526949487360441_1889061841_n7.jpg",
       link: "/electronic"
     }
+
   ];
 
 

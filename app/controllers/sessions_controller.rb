@@ -1,10 +1,12 @@
 class SessionsController < ApplicationController
 
-  def index
-    @sessions = Session.all
-    # render component: 'Sessions', props: { sessions: @sessions }
-    @favorite_sessions = current_user.favorited_by_type('Session')
-  end
+  before_action :authenticate_user!, only: :toggle_favorite
+
+  # def index
+  #   @sessions = Session.all
+  #   # render component: 'Sessions', props: { sessions: @sessions }
+  #   @favorite_sessions = current_user.favorited_by_type('Session')
+  # end
 
   def explore
     render component: 'Explore'
@@ -26,8 +28,11 @@ class SessionsController < ApplicationController
 
   def toggle_favorite
     @session = Session.find(params[:id])
-    current_user.favorited?(@session) ? current_user.unfavorite(@session) : current_user.favorite(@session)
-    flash.now[:notice] = "Session #{@session} saved"
+    if user_signed_in?
+      current_user.favorited?(@session) ? current_user.unfavorite(@session) : current_user.favorite(@session)
+    elsif !current_user
+      puts "no user signed in"
+    end
   end
 
 
