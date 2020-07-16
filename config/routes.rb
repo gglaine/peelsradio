@@ -13,18 +13,13 @@ Rails.application.routes.draw do
     end
   end
 
-
-
-
   root 'welcome#index'
   get 'welcome/index'
-
 
 #pages
   get 'explore', to: 'sessions#explore'
   get 'life', to: 'pages#life'
   get 'selected', to: 'pages#selected'
-
   get 'mypeels', to: 'sessions#mypeels'
 
 # timeline
@@ -41,9 +36,11 @@ Rails.application.routes.draw do
   get 'rock', to: 'sessions#rock'
   get 'brit', to: 'sessions#brit'
   get 'blues', to: 'sessions#blues'
+  get 'punk', to: 'sessions#punk'
   get 'reggae', to: 'sessions#reggae'
   get 'electronic', to: 'sessions#electronic'
   get 'coldwave', to: 'sessions#coldwave'
+  get 'gems', to: 'sessions#gems'
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

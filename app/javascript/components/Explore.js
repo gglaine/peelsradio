@@ -6,12 +6,16 @@ class Explore extends React.Component {
 
   render () {
 
-
   const genres = [
     {
       name: "COLD WAVE",
       pic: "https://www.typeroom.eu/assets/original/2020/05/18/JoyDivision-UnknownPleasures-B1.jpg",
       link: "/coldwave"
+    },
+    {
+      name: "PUNK",
+      pic: "https://www.uksubstimeandmatter.net/gallery/albums/userpics/10001/Post-show_group_photo_at_the_SPIT_club2C_Boston2C_USA_1982.jpg",
+      link: "/punk"
     },
     {
       name: "ROCK",
@@ -21,7 +25,12 @@ class Explore extends React.Component {
     {
       name: "FOLK",
       pic: "https://rock6070.e-monsite.com/medias/images/fairport-convention-2.jpg",
-      link: "/"
+      link: "/folk"
+    },
+    {
+      name: "GEMS",
+      pic: "https://d11mgq5hlnsdgo.cloudfront.net/4a28fd5d-6b13-40a1-910d-a993cfd47c7f.jpg",
+      link: "/gems"
     },
     {
       name: "BLUES",
@@ -36,17 +45,12 @@ class Explore extends React.Component {
     {
       name: "HARD ROCK",
       pic: "https://www.pixbear.com/wp-content/uploads/2019/10/motorhead_quizz_1.jpg",
-      link: "/"
+      link: "/hardrock"
     },
     {
       name: "ELECTRO",
       pic: "https://rtvc-assets-radionica3.s3.amazonaws.com/s3fs-public/senalradionica/articulo-noticia/galeriaimagen/1094782_526949487360441_1889061841_n7.jpg",
       link: "/electronic"
-    },
-    {
-      name: "TRIPPY",
-      pic: "https://thevinylfactory.com/wp-content/uploads/2014/09/miles-davis-cover3-660x398.png",
-      link: "/"
     }
   ];
 

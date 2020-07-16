@@ -83,34 +83,50 @@ class SessionsController < ApplicationController
   # /////////////////////////////
 
   def rock
-    @sessions = Session.tagged_with("Rock")
+    @sessions = Session.tagged_with("rock")
     # render component: 'Genre', props: { sessions: @sessions }
   end
 
   def brit
-    @sessions = Session.tagged_with("British")
-    render component: 'Genre', props: { sessions: @sessions}
+    @sessions = Session.tagged_with("british")
+    # render component: 'Genre', props: { sessions: @sessions}
+  end
+
+  def folk
+    @sessions = Session.tagged_with("folk")
+    # render component: 'Genre', props: { sessions: @sessions}
   end
 
   def blues
-    @sessions = Session.tagged_with("Blues")
-    render component: 'Genre', props: { sessions: @sessions}
+    @sessions = Session.tagged_with("blues")
+    # render component: 'Genre', props: { sessions: @sessions}
   end
 
   def reggae
-    @sessions = Session.tagged_with("Reggae")
-    render component: 'Genre', props: { sessions: @sessions}
+    @sessions = Session.tagged_with("reggae")
+    # render component: 'Genre', props: { sessions: @sessions}
   end
 
   def electronic
-    @sessions = Session.tagged_with("Electronic")
-    render component: 'Genre', props: { sessions: @sessions}
+    @sessions = Session.tagged_with("electronic")
+    # render component: 'Genre', props: { sessions: @sessions}
   end
 
   def coldwave
-    @sessions = Session.tagged_with("Cold wave")
-    render component: 'Genre', props: { sessions: @sessions}
+    @sessions = Session.tagged_with("cold-wave")
+    # render component: 'Genre', props: { sessions: @sessions}
   end
+
+  def hardrock
+    @sessions = Session.tagged_with("hard-rock")
+    # render component: 'Genre', props: { sessions: @sessions}
+  end
+
+  def gems
+    @sessions = Session.tagged_with("hard-rock")
+    # render component: 'Genre', props: { sessions: @sessions}
+  end
+
 
 
 

@@ -1,0 +1,17 @@
+<h1>BRIT</h1>
+<div class="ui container">
+   <ul class="genre-list">
+    <% @sessions.each do |s| %>
+      <div class="genre-list-item" >
+        <div class="">
+          <%= react_component("SessionListItem", { session: s }) %>
+        </div>
+        <%= link_to toggle_favorite_session_path(s), remote: true, method: :post do %>
+            <div class="like-icon " data-id="<%= s.id %>">
+              <%= render 'like_button' %>
+            </div>
+        <% end %>
+      </div>
+    <%end%>
+  </ul>
+</div>
