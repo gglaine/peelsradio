@@ -33,15 +33,19 @@ Rails.application.routes.draw do
   get 'oos', to: 'sessions#oos'
 
 # genres
-  get 'rock', to: 'sessions#rock'
-  get 'brit', to: 'sessions#brit'
   get 'blues', to: 'sessions#blues'
-  get 'punk', to: 'sessions#punk'
+  get 'brit', to: 'sessions#brit'
+  get 'coldwave', to: 'sessions#coldwave'
+  get 'electronic', to: 'sessions#electronic'
+  get 'folk', to: 'sessions#folk'
   get 'heavymetal', to: 'sessions#heavymetal'
   get 'reggae', to: 'sessions#reggae'
-  get 'electronic', to: 'sessions#electronic'
-  get 'coldwave', to: 'sessions#coldwave'
-  get 'gems', to: 'sessions#gems'
+  get 'rock', to: 'sessions#rock'
+  get 'punk', to: 'sessions#punk'
+
+
+
+
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
