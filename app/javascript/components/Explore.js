@@ -7,13 +7,13 @@ class Explore extends React.Component {
   render () {
 
   const genres = [
-   {
+    {
       name: "BLUES",
       pic: "https://cdns-images.dzcdn.net/images/artist/b31b010a9145a123f778c8baaa77f6fd/500x500.jpg",
       link: "/blues"
     },
     {
-      name: "COLD WAVE",
+      name: "NEW WAVE",
       pic: "https://www.typeroom.eu/assets/original/2020/05/18/JoyDivision-UnknownPleasures-B1.jpg",
       link: "/coldwave"
     },
@@ -40,7 +40,7 @@ class Explore extends React.Component {
     {
       name: "HARCORE",
       pic: "https://studybreaks.com/wp-content/uploads/2018/10/Screen-Shot-2018-10-12-at-7.24.53-AM.png",
-      link: "/rock"
+      link: "/harcore"
     },
     {
       name: "SOUL",
@@ -59,13 +59,9 @@ class Explore extends React.Component {
     },
     {
       name: "PSYCHEDELIC",
-      pic: "    https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY5NDg4NTc3Mzc2Mjk4NDU5/pink-floyd-16x9-gettyimages-85514589.jpg",
-      link: "/electronic"
+      pic: "https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY5NDg4NTc3Mzc2Mjk4NDU5/pink-floyd-16x9-gettyimages-85514589.jpg",
+      link: "/"
     }
-
-
-
-
 
   ];
 
@@ -98,57 +94,50 @@ class Explore extends React.Component {
     }
   ];
 
-
     return (
       <React.Fragment >
-      <div className="ui container ">
-        <Header  className="title-header" as="h1" textAlign='center' ><span className="title-light">Explore</span>GENRES</Header>
-      </div>
+        <div className="ui container ">
+          <Header  className="title-header" as="h1" textAlign='center' >
+            <span className="title-light">Explore</span>GENRES
+          </Header>
+        </div>
         <div className="ui container">
           <Grid stackable columns={2} >
           {
             genres.map((ge) => (
-
-            <Grid.Column >
+            <Grid.Column key={ge.name} >
               <a href={ge.link}>
               <div className="genre-cont">
                 <Image className="genre-img" src={ge.pic} />
                 <div className="genre-name">{ge.name}</div>
               </div>
               </a>
-
             </Grid.Column>
-
             ))
           }
           </Grid>
         </div>
-
         <div className="ui container ">
-          <Header className="title-header" as="h1" textAlign='center' ><span class="title-light">Explore</span>TIMELINE</Header>
+          <Header className="title-header" as="h1" textAlign='center' ><span className="title-light">Explore</span>TIMELINE</Header>
         </div>
-          <div className="ui container">
-            <Grid stackable columns={2} >
-            {
-              timelines.map((ge) => (
+        <div className="ui container">
+          <Grid stackable columns={2} >
+          {
+            timelines.map((ge) => (
 
-              <Grid.Column >
-                <a href={ge.link}>
+            <Grid.Column key={ge.name} >
+              <a href={ge.link}>
                 <div className="genre-cont">
                   <Image className="genre-img" src={ge.pic} />
                   <div className="genre-name">{ge.name}</div>
                 </div>
-                </a>
-
-              </Grid.Column>
-
-              ))
-            }
-            </Grid>
-          </div>
-        </React.Fragment>
-
-
+              </a>
+            </Grid.Column>
+            ))
+          }
+          </Grid>
+        </div>
+      </React.Fragment>
     );
   }
 }

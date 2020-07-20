@@ -28,10 +28,8 @@ class SessionsController < ApplicationController
 
   def toggle_favorite
     @session = Session.find(params[:id])
-    if user_signed_in?
+    if user_signed_in? && current_user
       current_user.favorited?(@session) ? current_user.unfavorite(@session) : current_user.favorite(@session)
-    elsif !current_user
-      puts "no user signed in"
     end
   end
 
