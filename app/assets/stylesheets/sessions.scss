@@ -2,11 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 //
-//
-//
-//
-//
-//
+
+
 .genre-desc {
   color: #fff !important;
 }
@@ -22,11 +19,7 @@
 }
 
 .genre-list-item {
-  // width: 100% !important;
   position: relative;
-  // min-height: 220px !important;
-  // display: flex;
-  // justify-content: flex-start;
   img {
     flex: 0 1 100%;
   }
@@ -123,7 +116,7 @@ a, .header {
   left: 0em !important;
 }
 
-.session .year{
+.session .year {
   position: absolute !important;
   top: 1em !important;
   right: 1em !important;

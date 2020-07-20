@@ -1,6 +1,6 @@
 # README
 
-Hey there. This is a project I set up to let users browse youtube videos of artists recorded for the John Peel show that run on BBC radio from 1968 to 2004. Peel's show was a launchpad for many bands on their way to stardom who recored studio sessions specially for the show
+Hey there. This is a project I set up to let users browse youtube videos of artists recorded for the John Peel show that run on BBC radio from 1968 to 2004. Peel's show was a launchpad for many bands on their way to stardom who recorded sessions specially for the show in the BBC's studios.
 
 Credit due to davestrickson who put out a huge listing of sessions featured on youtube on his blog davestrickson.blogspot.com
 

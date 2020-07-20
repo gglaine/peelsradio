@@ -1,6 +1,9 @@
 import React from "react"
 import { Grid, Header, List, Card, Image, Icon } from 'semantic-ui-react'
 
+import Blues from 'images/genres/blues.jpg'
+import Coldwave from 'images/genres/newwave.jpg'
+
 
 class Explore extends React.Component {
 
@@ -9,12 +12,12 @@ class Explore extends React.Component {
   const genres = [
     {
       name: "BLUES",
-      pic: "https://cdns-images.dzcdn.net/images/artist/b31b010a9145a123f778c8baaa77f6fd/500x500.jpg",
+      pic: Blues,
       link: "/blues"
     },
     {
       name: "NEW WAVE",
-      pic: "https://www.typeroom.eu/assets/original/2020/05/18/JoyDivision-UnknownPleasures-B1.jpg",
+      pic: Coldwave,
       link: "/coldwave"
     },
     {
