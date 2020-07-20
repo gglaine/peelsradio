@@ -97,6 +97,11 @@ class SessionsController < ApplicationController
     # render component: 'Genre', props: { sessions: @sessions}
   end
 
+  def punk
+    @sessions = Session.tagged_with("punk")
+    # render component: 'Genre', props: { sessions: @sessions}
+  end
+
   def folk
     @sessions = Session.tagged_with("folk")
     # render component: 'Genre', props: { sessions: @sessions}
@@ -108,7 +113,7 @@ class SessionsController < ApplicationController
   end
 
   def reggae
-    @sessions = Session.tagged_with("reggae")
+    @sessions = Session.tagged_with("reggae" || "dub")
     # render component: 'Genre', props: { sessions: @sessions}
   end
 
@@ -122,14 +127,18 @@ class SessionsController < ApplicationController
     # render component: 'Genre', props: { sessions: @sessions}
   end
 
-  def hardrock
-    @sessions = Session.tagged_with("hard-rock")
+  def heavymetal
+    @sessions = Session.tagged_with("hard-rock" || "heavy metal")
     # render component: 'Genre', props: { sessions: @sessions}
   end
 
   def gems
     @sessions = Session.tagged_with("hard-rock")
     # render component: 'Genre', props: { sessions: @sessions}
+  end
+
+  def US
+    @sessions = Session.tagged_with("US")
   end
 
 

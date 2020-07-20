@@ -7,35 +7,15 @@ class Explore extends React.Component {
   render () {
 
   const genres = [
+   {
+      name: "BLUES",
+      pic: "https://cdns-images.dzcdn.net/images/artist/b31b010a9145a123f778c8baaa77f6fd/500x500.jpg",
+      link: "/blues"
+    },
     {
       name: "COLD WAVE",
       pic: "https://www.typeroom.eu/assets/original/2020/05/18/JoyDivision-UnknownPleasures-B1.jpg",
       link: "/coldwave"
-    },
-    {
-      name: "PUNK",
-      pic: "https://www.uksubstimeandmatter.net/gallery/albums/userpics/10001/Post-show_group_photo_at_the_SPIT_club2C_Boston2C_USA_1982.jpg",
-      link: "/punk"
-    },
-    {
-      name: "ROCK",
-      pic: "https://papyblues.com/wp-content/uploads/2018/05/frf.png",
-      link: "/rock"
-    },
-    {
-      name: "FOLK",
-      pic: "https://rock6070.e-monsite.com/medias/images/fairport-convention-2.jpg",
-      link: "/folk"
-    },
-    {
-      name: "SOUL",
-      pic: "https://res-4.cloudinary.com/dostuff-media/image/upload//c_fill,g_faces,f_auto,w_800/v1478481314/event-poster-6920933.jpg",
-      link: "/gems"
-    },
-    {
-      name: "BLUES",
-      pic: "https://i.pinimg.com/originals/cf/83/65/cf83655c524f675d387183a91bd2a97f.jpg",
-      link: "/blues"
     },
     {
       name: "REGGAE | DUB",
@@ -43,15 +23,49 @@ class Explore extends React.Component {
       link: "/reggae"
     },
     {
-      name: "HARD ROCK",
-      pic: "https://www.pixbear.com/wp-content/uploads/2019/10/motorhead_quizz_1.jpg",
-      link: "/hardrock"
+      name: "FOLK",
+      pic: "https://rock6070.e-monsite.com/medias/images/fairport-convention-2.jpg",
+      link: "/folk"
+    },
+    {
+      name: "ROCK",
+      pic: "https://papyblues.com/wp-content/uploads/2018/05/frf.png",
+      link: "/rock"
+    },
+    {
+      name: "PUNK",
+      pic: "https://www.uksubstimeandmatter.net/gallery/albums/userpics/10001/Post-show_group_photo_at_the_SPIT_club2C_Boston2C_USA_1982.jpg",
+      link: "/punk"
+    },
+    {
+      name: "HARCORE",
+      pic: "https://studybreaks.com/wp-content/uploads/2018/10/Screen-Shot-2018-10-12-at-7.24.53-AM.png",
+      link: "/rock"
+    },
+    {
+      name: "SOUL",
+      pic: "https://res-4.cloudinary.com/dostuff-media/image/upload//c_fill,g_faces,f_auto,w_800/v1478481314/event-poster-6920933.jpg",
+      link: "/gems"
+    },
+    {
+      name: "HEAVY METAL",
+      pic: "https://cdn.torontolife.com/wp-content/uploads/2016/07/No-Flash-Please-Nirvana-1-803x603.jpg",
+      link: "/heavymetal"
     },
     {
       name: "ELECTRO",
       pic: "https://rtvc-assets-radionica3.s3.amazonaws.com/s3fs-public/senalradionica/articulo-noticia/galeriaimagen/1094782_526949487360441_1889061841_n7.jpg",
       link: "/electronic"
+    },
+    {
+      name: "PSYCHEDELIC",
+      pic: "    https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY5NDg4NTc3Mzc2Mjk4NDU5/pink-floyd-16x9-gettyimages-85514589.jpg",
+      link: "/electronic"
     }
+
+
+
+
 
   ];
 

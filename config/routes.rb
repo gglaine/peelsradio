@@ -37,6 +37,7 @@ Rails.application.routes.draw do
   get 'brit', to: 'sessions#brit'
   get 'blues', to: 'sessions#blues'
   get 'punk', to: 'sessions#punk'
+  get 'heavymetal', to: 'sessions#heavymetal'
   get 'reggae', to: 'sessions#reggae'
   get 'electronic', to: 'sessions#electronic'
   get 'coldwave', to: 'sessions#coldwave'
