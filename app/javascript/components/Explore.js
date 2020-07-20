@@ -11,16 +11,6 @@ class Explore extends React.Component {
 
   const genres = [
     {
-      name: "BLUES",
-      pic: Blues,
-      link: "/blues"
-    },
-    {
-      name: "NEW WAVE",
-      pic: Coldwave,
-      link: "/coldwave"
-    },
-    {
       name: "REGGAE | DUB",
       pic: "https://melcirclesdotcom.files.wordpress.com/2017/05/jamaican-soundsystem.jpg?w=640",
       link: "/reggae"
@@ -41,16 +31,6 @@ class Explore extends React.Component {
       link: "/punk"
     },
     {
-      name: "HARCORE",
-      pic: "https://studybreaks.com/wp-content/uploads/2018/10/Screen-Shot-2018-10-12-at-7.24.53-AM.png",
-      link: "/harcore"
-    },
-    {
-      name: "SOUL",
-      pic: "https://res-4.cloudinary.com/dostuff-media/image/upload//c_fill,g_faces,f_auto,w_800/v1478481314/event-poster-6920933.jpg",
-      link: "/gems"
-    },
-    {
       name: "HEAVY METAL",
       pic: "https://cdn.torontolife.com/wp-content/uploads/2016/07/No-Flash-Please-Nirvana-1-803x603.jpg",
       link: "/heavymetal"
@@ -59,11 +39,6 @@ class Explore extends React.Component {
       name: "ELECTRO",
       pic: "https://rtvc-assets-radionica3.s3.amazonaws.com/s3fs-public/senalradionica/articulo-noticia/galeriaimagen/1094782_526949487360441_1889061841_n7.jpg",
       link: "/electronic"
-    },
-    {
-      name: "PSYCHEDELIC",
-      pic: "https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY5NDg4NTc3Mzc2Mjk4NDU5/pink-floyd-16x9-gettyimages-85514589.jpg",
-      link: "/"
     }
 
   ];
@@ -101,7 +76,7 @@ class Explore extends React.Component {
       <React.Fragment >
         <div className="ui container ">
           <Header  className="title-header" as="h1" textAlign='center' >
-            <span className="title-light">Explore</span>GENRES
+            EXPLORE
           </Header>
         </div>
         <div className="ui container">
@@ -121,7 +96,7 @@ class Explore extends React.Component {
           </Grid>
         </div>
         <div className="ui container ">
-          <Header className="title-header" as="h1" textAlign='center' ><span className="title-light">Explore</span>TIMELINE</Header>
+          <Header className="title-header" as="h1" textAlign='center' >TIMELINES</Header>
         </div>
         <div className="ui container">
           <Grid stackable columns={2} >
