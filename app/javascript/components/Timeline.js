@@ -1,6 +1,10 @@
 import React from "react"
 import { Grid, Header, List, Card, Image, Icon } from 'semantic-ui-react'
 
+
+import Six from 'images/genres/fleetwoodmac.jpg'
+
+
 class Timeline extends React.Component {
   render() {
     const styles = {
@@ -13,7 +17,7 @@ class Timeline extends React.Component {
   const timelines = [
     {
       name: "Late 60s",
-      pic: "https://mattathomeintheworld.files.wordpress.com/2019/03/fleetwood-mac-rumours-back-e1553481036990.jpg?w=620"
+      pic: Six
     },
     {
       name: "70s",
