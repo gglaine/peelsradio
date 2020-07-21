@@ -1,10 +1,16 @@
 <div class="ui container mypeels">
-  <h1>FAVORITE SESSIONS STREAM</h1>
   <%= react_component('UserPlayer', { sessions: @sessions }, {prerender: true}) %>
-  <h1>FAVORITE SESSIONS</h1>
+  <h1>MY PLAYLIST</h1>
   <div class="ui relaxed divided list">
     <% @favorites.each do |fav| %>
       <%= react_component('UserPlaylistItem', { session: Session.find("#{fav.favoritable_id}")}, {prerender: true}) %>
+      <%= link_to toggle_favorite_session_path(fav), remote: true, method: :post do %>
+          <div class="like-icon " data-id="<%= fav.id %>">
+            <div class="like-icon " data-id="<%= fav.id %>">
+              <i class="fas fa-times <%= 'red' if current_user && current_user.favorited?(fav) %>" ></i>
+            </div>
+          </div>
+      <% end %>
     <% end %>
   </div>
   <h3>

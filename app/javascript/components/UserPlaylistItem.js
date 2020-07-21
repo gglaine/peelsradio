@@ -30,7 +30,6 @@ class UserPlaylistItem extends React.Component {
           <List.Header as="h5" className="year">
             {this.props.session.year}
           </List.Header>
-          <Icon color='red' name='x' />
         </List.Item>
       </React.Fragment>
     );
