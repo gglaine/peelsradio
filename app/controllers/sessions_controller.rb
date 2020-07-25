@@ -19,6 +19,13 @@ class SessionsController < ApplicationController
     render component: 'Session', props: { session: @session, related: @related_sessions }, prerender: true
   end
 
+
+  def favorites
+    @user = current_user
+    @sessions = Session.all
+    @favorite_sessions = current_user.favorited_by_type('Session')
+  end
+
   def mypeels
     @user = current_user
     @favorites = @user.all_favorites

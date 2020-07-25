@@ -1,8 +1,22 @@
 var sessionId = '<%= @session.id%>'
 
-function toggleLikeButton(sessionId, innerHTML) {
+// function toggleLikeButton(sessionId, innerHTML) {
+//   let likeButton = document.querySelector(`.like-icon[data-id='${sessionId}']`)
+//   likeButton.classList.toggle('red');
+// }
+
+// toggleLikeButton(sessionId);
+
+
+function toggleLikeButton(sessionId, favoritedSession) {
   let likeButton = document.querySelector(`.like-icon[data-id='${sessionId}']`)
   likeButton.classList.toggle('red');
+  if (likeButton.classList.contains('red')) {
+    const favoriteList = document.querySelector('.favorites');
+    favoriteList.insertAdjacentHTML('beforeend', favoritedSession)
+  }
+  else {
+    document.querySelector(`.favorite[data-id='${sessionId}']`).remove()
+  }
 }
-
-toggleLikeButton(sessionId);
+toggleLikeButton(sessionId, '<%= j render "sessions/session", session: @session %>');

@@ -22,8 +22,7 @@ class UserPlaylistItem extends React.Component {
 
   render () {
     return (
-      <React.Fragment >
-        <List.Item className="user-playlist-item" key={this.props.session.id} href={`/sessions/${this.props.session.id}`}>
+        <List.Item className="session" key={this.props.session.id} href={`/sessions/${this.props.session.id}`}>
           <List.Header as="h5" className="name" >
            {this.props.session.band}
           </List.Header>
@@ -31,7 +30,6 @@ class UserPlaylistItem extends React.Component {
             {this.props.session.year}
           </List.Header>
         </List.Item>
-      </React.Fragment>
     );
   }
 }
