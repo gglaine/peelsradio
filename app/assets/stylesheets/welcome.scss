@@ -34,8 +34,11 @@ strong {
 }
 
 .banner a .button--moema {
-    color: #18adaf !important;
-    font-size: 2em !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #00d4ef !important;
+    font-size: 1.5em !important;
     border: 4px solid #00d4ef !important;
 }
 
@@ -122,6 +125,9 @@ strong {
 // BUTTON MOEMA
 
 .button--moema {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   padding: 1em 1em;
   margin: 0 auto;
   border-radius: 50px;

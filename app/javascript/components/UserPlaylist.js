@@ -7,7 +7,8 @@ import { List } from 'semantic-ui-react'
 class UserPlaylist extends React.Component {
 
   state = {
-    favorite_sessions: this.props.sessions
+    favorite_sessions: this.props.sessions,
+    deletedSessions: []
   }
 
   removeSession(session) {
@@ -16,11 +17,19 @@ class UserPlaylist extends React.Component {
     let index = faved_sessions.indexOf(session)
     if (index !== -1) {
       faved_sessions.splice(index, 1);
+      // const deleted_sessions = [...this.state.deletedSessions];
+      // let deleted = deleted_sessions.push(session);
       this.setState({favorite_sessions: faved_sessions});
+
     }
+
   }
 
+
+
   render() {
+
+    console.log(this.state.deletedSessions)
 
     const sessions = this.props.sessions;
     const styles = {
@@ -38,7 +47,7 @@ class UserPlaylist extends React.Component {
             <React.Fragment>
               <UserPlaylistItem session={session} key={session.id} />
 
-              <button className="btn-destroy-sess" onClick={() => this.removeSession(session) } >Delete session</button>
+              <button className="btn-destroy-sess fas fa-times" onClick={() => this.removeSession(session) } >Delete session</button>
             </React.Fragment>
             ))
           }
