@@ -79,6 +79,17 @@
 
 .sessions-list {
   padding-top: 5em !important;
+  width: 100%;
+  .title {
+    color: #fff;
+  }
+}
+
+.sessions-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 a, .header {
