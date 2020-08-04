@@ -19,25 +19,22 @@ class SessionsController < ApplicationController
     render component: 'Session', props: { session: @session, related: @related_sessions }, prerender: true
   end
 
-
-  def favorites
-    @user = current_user
-    @sessions = Session.all
-    @favorite_sessions = current_user.favorited_by_type('Session')
-  end
-
   def mypeels
     @user = current_user
     @favorites = @user.all_favorites
     @sessions = @user.favorited_sessions
-    # render component: 'Mypeels', props: { sessions: @sessions }, prerender: true
+    @favorite_sessions = current_user.favorited_by_type('Session')
   end
 
   def toggle_favorite
+    @favorite_sessions = current_user.favorited_by_type('Session')
     @session = Session.find(params[:id])
+    @sessions = current_user.favorited_by_type('Session')
     if user_signed_in? && current_user
       current_user.favorited?(@session) ? current_user.unfavorite(@session) : current_user.favorite(@session)
+
     end
+    redirect_to '/mypeels'
   end
 
 

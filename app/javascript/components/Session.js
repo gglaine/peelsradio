@@ -65,7 +65,6 @@ class Session extends React.Component {
             style={styles.reactPlayer}
             modestbranding={1}
             />
-          <Icon circular inverted size='small' color='teal' name='like' />
         </Container>
       </div>
       <div className="tagslist">
